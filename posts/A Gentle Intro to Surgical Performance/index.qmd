@@ -1,0 +1,160 @@
+---
+title: "A Gentle Intro to Surgical Performance"
+author: "Bobby Fatemi"
+description: "This post provides a gentle introduction to benchmarking Surgical Performance, while highlighting the motivation for this work, the data collected in the effort, and the process of transforming the raw data into surgical performance KPIs presented to key Hospital and Surgeon stakeholders."
+categories: [Robotic Surgery]
+image: images/hex-post-thumb.png
+date-created: "2023-11-19"
+date: "2023-12-12"
+draft: false
+---
+
+## Background of Research
+
+In my prior work as a data scientist working in the medical/healthcare
+space, I got the opportunity to work closely with Surgeons at major
+academic institutions across the United States. My role at the time was
+to partner with hospital networks or individual academic surgeons in a
+joint research initiative to set up a data architecture and execute on a
+long-term data collection effort focused only on surgical performance
+KPIs, namely ***Surgical Efficiency and Proficiency** metrics*[^1].
+
+Most importantly, these efforts were conducted at scale and would result
+in the aggregation of a massive amount of longitudinal metrics
+describing ***Surgical Actions***.
+
+Surgical Actions
+
+:   Time-stamped records of actions performed by the surgeon over the
+    course of a surgical procedure
+
+Surgical Efficiency
+
+:   Metrics describing the operating efficiency of an OR Team and
+    Surgeon working together to complete a surgical procedure
+
+Surgical Proficiency
+
+:   Benchmarks describing the relative expertise level of a surgeon
+    performing a procedure
+
+[^1]: In this work, we were primarily interested in data about the
+    Surgeons, and observational metrics describing their performance
+    during the procedure, rather than healthcare outcomes. Thus, no
+    personally identifiable information was collected. This simplified
+    our work ensuring all HIPAA rules and regulations were satisfied.
+
+### About the Data Collected
+
+The dataset ultimately collected covered thousands of surgeons across
+the United States over a period of 5 years. The population of Surgeons
+in the data included a wide range of experience levels ranging from
+novice, having performed fewer than 10 procedures, to expert surgeons
+that have completed more than 300 procedures. Additionally, the
+population of surgeons include a many different surgical specialties,
+performing a wide range of cases including gynecological, thoracic,
+cardiac, and more.
+
+## Producing Surgical Performance KPIs
+
+The the raw point-in-time Surgical Actions data collected would
+ultimately be transformed, and the resulting data is best described as
+event-based and resembled the following:
+
+::: {.callout-note style="line-height: 5pt;" appearance="minimal" icon="false"}
+## Step II - Events Processed From Raw Surgical Actions
+
+------------------------------------------------------------------------
+
+8:45:01AM - OR Team Pre-Op Setup Begins
+
+8:55:16AM - OR Team Pre-Op Setup Completes
+
+8:57:05AM - Surgeon Begins Procedure
+
+8:57:05AM - Surgeon Uses Instrument X (3 minutes and 5 seconds)
+
+9:00:10AM - Surgeon Switches Instrument X with Y
+
+9:00:55AM - Surgeon Idle For 45 seconds
+
+9:03:05AM - Surgeon Uses Instrument Y (2 minutes and 45 seconds)
+
+9:05:50AM - Surgeon Completes Procedure
+
+9:05:50AM - OR Team Post-Op Process Begins
+
+9:15:10AM - OR Team Post-Op Process Completes
+:::
+
+The events above would then be summarized into procedure-level metrics
+that describe surgical proficiency, efficiency, or both
+
+::: {.callout-note style="line-height: 5pt;" appearance="minimal" icon="false"}
+## Step III - Metrics Summarized From Events Data
+
+------------------------------------------------------------------------
+
+::: {.callout-danger appearance="minimal" icon="false"}
+###### Efficiency Metrics
+
+Total OR Procedure Duration.................. 30 minutes and 9 seconds
+
+Total Surgeon Operating Time................ 5 minutes and 50 seconds
+
+Total Surgeon Idle Duration.................... 45 seconds
+
+Total Non-Surgery Duration.................... 20 minutes 35 seconds
+:::
+
+::: {.callout-danger appearance="minimal" icon="false"}
+###### Proficiency Metrics
+
+Unique Surgical Instruments Used......... 2
+
+Total Surgical Instrument Swaps............. 1
+:::
+:::
+
+Lastly, these metrics would then be translated to KPIs, benchmarked
+against a target performance level[^2], and presented to the Executive
+Stakeholders of this work.
+
+::: {.callout-note style="line-height: 10pt;" appearance="minimal" icon="false"}
+## Step IV - Translate Procedure Metrics to Performance KPIs
+
+------------------------------------------------------------------------
+
+::: {.callout-danger appearance="minimal" icon="false"}
+###### Surgeon Efficiency Rate - 88%
+
+*Falls within the Highly Efficient Range*
+:::
+
+::: {.callout-danger appearance="minimal" icon="false"}
+###### OR Team Efficiency Rate - 65%
+
+*Falls within the Average Efficiency Range*
+:::
+:::
+
+------------------------------------------------------------------------
+
+[^2]: The Target Performance for benchmarking would be derived by
+    identifying a control group of Surgeons with high experience levels
+    and are known to be both efficient and proficient. The metric values
+    for these expert surgeons would guide the assessment of performance
+    for all other Surgeons.
+
+## What's Next
+
+Once there was enough of these historical surgical actions data
+collected, that's when the interesting part of my work would begin...
+the analysis!
+
+Subscribe to my blog and stay tuned for upcoming posts where I dive into
+this work and share some fascinating insights effort to develop Surgical
+Learning Curve models, and further present a case study where I
+demonstrate how to use these models as the foundation for assessing the
+surgical expertise and monitoring novice surgeons as they progress along
+their own learning curves.

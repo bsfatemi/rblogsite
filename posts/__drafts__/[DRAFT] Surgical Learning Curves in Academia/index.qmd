@@ -1,0 +1,11 @@
+---
+title: "Surgical Learning Curves in Academia"
+author: "Bobby Fatemi"
+description: "A few quick takeaways from academia on Surgical Learning Curves."
+categories: [medicine, surgery]
+image: images/generic-draft-thumb.png
+date-created: "2024-01-05"
+date-modified: ""
+date: ""
+draft: true
+---

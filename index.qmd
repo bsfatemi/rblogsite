@@ -1,0 +1,111 @@
+---
+title: "All Things Data Science"
+subtitle: Insights, analytics, tips, and commentary about all things Data Science
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  feed: true
+  fields: [image, date, title, author, reading-time, description, categories]
+page-layout: full
+margin-header: subscribe.html
+title-block-banner: true
+format:
+  html:
+    toc: false 
+execute:
+  echo: false
+---
+
+::: {.headline .g-col-lg-6 .g-col-12 .g-col-sm-12}
+::: h3
+Featured
+:::
+
+My posts focused on cannabis retail and consumer insights published on
+[The
+Patch](https://www.happycabbage.io/the-patch "Blog by Happy Cabbage Analytics").
+For more about me, see [here](./pages/about/index.html "About me page")
+and don't hesitate to
+[contact](https://us21.list-manage.com/contact-form?u=9a91f0c5718cbb77d8b252807&form_id=0d3c34c402b50424ea117b80c34a2aa4 "Contact Form Page")
+me!
+:::
+
+```{r}
+#| classes: '.g-col-lg-6 .g-col-12 .g-col-md-12'
+source("feature/carousel.R")
+carousel("gallery-carousel", 5000, yaml.load_file("feature/carousel-posts.yml"))
+```
+
+------------------------------------------------------------------------
+
+::: callout-important
+## Blog Apps
+
+Many of these posts have associated Shiny Apps or R packages. To see
+more visit my [analytics](pages/analytics) page or go to my [app
+portal](https://apps.rdata.blog/) and sign in with google to demo all
+public apps.
+:::
+
+```{=html}
+<style>
+
+#hero-banner {
+  padding-top: 35px;
+  background-color: rgb(237,243,249);
+}
+
+#quarto-content main { 
+  margin-top: 0;
+  padding-top: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.headline {
+  font-size: 1.25em;
+  font-weight: 300;
+  padding-bottom: 1em;
+}
+
+.headline p {
+  margin: 0;
+  padding-bottom: 0.2rem;
+}
+
+.headline a {
+  text-decoration: none;
+}
+
+.headline ul li {
+  margin-bottom: 0.3em;
+}
+
+.carousel.card {
+  padding-top: 2em;
+}
+
+.carousel img {
+  width: 60%;
+  margin-bottom: 110px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  margin-bottom: 110px;
+}
+
+.carousel-caption {
+  padding-top: 1em;
+}
+
+.touch {
+  
+}
+</style>
+```

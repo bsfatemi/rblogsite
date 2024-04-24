@@ -1,0 +1,27 @@
+---
+title: "Consumer Age by Category"
+author: "Bobby Fatemi"
+date: "2023-05-23"
+categories: [cannabis, insights]
+description: "This post demonstrates the differences in the distribution of Age (of all cannabis consumers between January and May 2023) across cannabis product categories."
+image: "images/distr-age-by-category_5-24-23.png"
+---
+
+## Consumer Age by Category
+
+Based on the distributions below, we can see that there is ***nearly a
+20 year age gap*** between the median age of the group that most often
+purchases **Vapes or Extracts**, then that of **Topicals**. Furthermore,
+the distributions begin highly skewed to the left around the legal age
+of consumption (21 y/o) but have a tendancy to normalize around the
+average age of the group as you go down.
+
+## ![](images/distr-age-by-category_5-24-23.png)
+
+Some hypotheses around this notable change and shift in distribution
+could center around the accessibility and potential market growth of
+product categories. For instance, it's worth noting that topicals seem
+to be accessible to a wider age group and therefore the potential for
+market growth for topicals products seems to be higher then that of
+Vapes or Extracts. Note this is in reference to growth and not size.
+Market size for vapes or extracts remains markedly high.

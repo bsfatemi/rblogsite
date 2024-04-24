@@ -1,0 +1,105 @@
+---
+title: "Top Market-Wide Brands Ranked"
+author: "Bobby Fatemi"
+date: "2023-10-02"
+categories: [insights]
+description: "This post describes two metrics used for ranking brands, the methodology and selection criteria for brands to be considered for ranking, and presents the top 25 of the 160+ eligible brands ranked according to our metrics. Lastly, I propose a third metric that may provide additional value when used to rank brands as a potential next step in extending this work"
+image: images/top25_sales.png
+draft: true
+---
+
+::: {.callout-tip icon="false"}
+# About Our Sales Data... {style="color: green"}
+
+-   As of this post, there are 130 distinct retail organizations with
+    342 store locations across 30+ sales markets in the US that generate
+    all the transactions in our database.
+-   These retailers have sold over 192.6M product units totaling \$5B in
+    sales revenue since 2018.
+-   Furthermore there are over 90K uniquely identifiable brands
+    associated with all products sold and revenue generated since 2018.
+:::
+
+## Objective
+
+In this post, I identify all brands that have product sales
+market-wide[^1], and among those brands, rank the top 25 by two key
+metrics defined below: Total Daily Market-Sales, and Recently Trending
+Sales Growth
+
+Total Daily Market-Sales
+
+:   A brand's total sales across all retailers, on a daily basis This
+    analysis utilizes these daily total sales for a 90-day period ending
+    on 9/29/23
+
+Recently Trending Sales Growth
+
+:   This is calculated as the percent change in **Average** **Total
+    Daily Market-Sales** for the past 7-days over the full prior 90-day
+    period and expressed as a percentage increase/decrease from the
+    90-day average to the recent 7 day average
+
+[^1]: Market-wide in this context are brands that are available across
+    multiple retail organizations with minimum levels of unit and total
+    dollar sales per day. For additional details, see callout titled
+    'Brand Eligibility for Ranking..." under section **Methodology**
+
+## Methodology
+
+Using 90 days of sales transactions, I first identify brands eligible
+for ranking (i.e. brands that meet the selection criteria described
+below). Next, I define the two metrics used to rank selected brands: (1)
+Average Daily Market-Sales and (2) Recent Trends in Sales Growth (both
+defined above). Finally, I calculate these two metrics over the full
+90-day sales period, as well as the most recent 7 days and use these
+results to rank the top 25 brands for each of the two metrics. The next
+section provides the details of the selection criteria used to determine
+whether brands are considered for ranking or ruled out.
+
+::: callout-tip
+### Brand Eligibility For Ranking...
+
+I.  This report and the rankings presented are generated using sales
+    data that dates back 90 days as of 9/29/2023
+II. There are in total over 20,000 uniquely identifiable brands in sales
+    transactions for this 90-day period
+III. Of the 20K individual brands, 1,500 met the first filtering
+     criteria: have at least 1000 unit sales, and 10,000 total sales in
+     the 90-day sales period
+IV. The final selection criteria is a threshold describing a minimum
+    level of market availability. All private-label or house branded
+    products are automatically excluded from consideration
+V.  Of the 1,500 brands that met the minimum sales thresholds, 164 met
+    the market availability threshold defined as having at least \$1K
+    and 100 units in sales per day (on average) over a 90-day window,
+    across 6 or more distinct retail organizations
+:::
+
+## Most Selling Brands
+
+The following plot shows the top 25 brands ranked from most to least
+average total sales per day over the prior 7-days. Also shown is the
+same stat over the full 90-day period for comparison.
+
+![](images/top25_sales.png){fig-align="center"}
+
+## Recently Trending Brands
+
+The following plot shows the top 25 brands ranked by growth in total
+sales per day for the past 7-days over the average sales per day for the
+full 90-day period.
+
+![](images/top25_growth.png){fig-align="center"}
+
+## Extending This Work
+
+A proposed third metric that can be useful for ranking brands is defined
+in retail terms as Brand-Share. Similar to Market-Share, Brand-Share is
+a retail term that is defined as:
+
+> Brand share is defined as **the percentage of a given product
+> category's sales that is attributed to one brand**[^2]
+
+[^2]: https://blog.wiser.com/what-is-brand-share-and-how-to-optimize-it/
+

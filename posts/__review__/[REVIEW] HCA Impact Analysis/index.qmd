@@ -1,0 +1,131 @@
+---
+title: "The Impact of Happy Analytics"
+author: "Bobby Fatemi"
+date: "2023-08-22"
+categories: [case study]
+description: "This post is a case study that explores the impact HCA has had on one of our earliest retail clients. This impact is assessed through a period-by-period analysis of a set of KPIs that describe the business and operational success of a long-time HCA retail client."
+image: "images/medithrive/total_units.jpg"
+draft: true
+---
+
+Retailer Medithrive's increasing utilization of the Happy platform is
+shown to be correlated with the positive outcomes and growth seen in
+various KPIs that describe business performance. Not only has their
+**monthly order-velocity increased (+19%) since adoption of the Happy
+ecosystem**, their average **sales per order has increased (+28%) over
+the same time period**. Additionally, Medithrive is experiencing a
+surging boom in the number of unique products and brands they offer on
+their menu. These results and more are shown in the [Summary of Results]
+section of this post.
+
+## Background
+
+Medithrive is one of HCA's earliest retail clients, having signed up for
+HCA access in April of 2020. Currently, we have access to Medithrive's
+transactional data starting from March of 2019 and spanning to present
+day. This case study explores the following metrics calculated for the
+period prior to Medithrive becoming an HCA retailer (March 2019 - March
+2020), as well as the period after Medithrive signed up for platform
+access (April 2020 - Present), and a difference of means test was
+conducted to ensure statistical significance of the results.
+
+The KPI analyzed are as follows:
+
+-   `Total Orders by Month`
+
+-   `Total Sales by Month`
+
+-   `Average Sales Per Order by Month`
+
+-   `The Number of Unique Brands Sold by Month`
+
+-   `The Number of Unique Products Sold by Month`
+
+-   `The Share of all Units Sold via Retail (vs Delivery)`
+
+### Why Medithrive
+
+Medithrive has a dataset that spans many years and includes a full year
+of transactions that occurred prior to becoming an HCA client. This is
+ideal as it gives us a large enough sample size to be statistically
+confident in the differences in KPI values across periods (pre-HCA vs
+post-HCA). Additionally, Medithrive is an ideal client for this case
+study as they have heavily invested in the adoption and usage of Happy
+Marketers, our tool that has the most directly measurable impact on
+top-line revenue growth and sales-velocity.
+
+The plot below validates their increasing utilization of HCA tools, and
+demonstrates the growth in the total number of Marketing Campaigns
+executed by Medithrive via Happy Marketers over a two-year period:
+
+![](images/medithrive/total_campaigns_by_month.png)
+
+The upward trend in utilization of Happy Marketers is correlated with
+the trends in the KPIs analyzed for Medithrive over the same period.
+This is consistent with our expectation and core belief:
+
+> Using Happy Marketers, as well as other analytical products offered in
+> the Happy ecosystem, leads directly to positive business impact.
+> Specifically, this case study demonstrates and validates HCA's
+> founding mission: to optimize cannabis product inventory and maximize
+> product sell-through for our retail clients.
+
+## Summary of Results
+
+The following table summarizes the analysis shown in the [Appendix] of
+this post.
+
+|                                   | ***Before HCA*** | *After HCA* | \% Change |
+|----------------------------|---------------|---------------|---------------|
+| Total Orders Per Month            | 10.7K            | 12.7K       | +19%      |
+| Total Sales Per Month             | \$320K           | \$360K      | +13%      |
+| Ave Sales Per Order Per Month     | \$58             | \$74        | +28%      |
+| Count of Unique Brands Sold       | 63               | 94          | +49%      |
+| Count of Unique Products sold     | 361              | 694         | +94%      |
+| Percent of Units Sold as Delivery | 16%              | 40%         | +150%     |
+
+: Comparison of KPIs Across Periods
+
+## Appendix
+
+Included below are the plot visuals and summarized metric values created
+during this analysis. This results are summarized above in this post.
+
+#### *Total Orders Per Month*
+
+------------------------------------------------------------------------
+
+![](images/medithrive/total_units.jpg)
+
+#### *Total Sales Per Month*
+
+------------------------------------------------------------------------
+
+![](images/medithrive/total_sales.jpg)
+
+#### *Ave Sales Per Order Per Month*
+
+------------------------------------------------------------------------
+
+![](images/medithrive/sales_per_order.jpg)
+
+#### *Count of Unique Brands Sold*
+
+------------------------------------------------------------------------
+
+![](images/medithrive/count_unique_brands.jpg)
+
+#### *Count of Unique Products Sold*
+
+------------------------------------------------------------------------
+
+![](images/medithrive/count_unique_products.jpg)
+
+#### *Percent of Units Sold as Delivery*
+
+------------------------------------------------------------------------
+
+Note the following shows the share of Retail units sold. The share of
+Delivery units sold is simply 1 minus the percentage shown.
+
+![](images/medithrive/percent_retail_units.jpg)

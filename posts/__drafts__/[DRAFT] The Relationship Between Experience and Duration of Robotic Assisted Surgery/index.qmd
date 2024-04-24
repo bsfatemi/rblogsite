@@ -1,0 +1,11 @@
+---
+title: "Correlation Between Surgeon Experience and Procedure Duration"
+author: "Bobby Fatemi"
+description: "Revisits an analysis of Surgical OR data across a wide range of procedures and surgeons in the U.S., and examines the correlation between Surgeon experience level and the variance of average procedure durations."
+categories: [analysis, healthcare]
+image: images/generic-draft-thumb.png
+date-created: "2023-12-24"
+date-modified: ""
+date: ""
+draft: true
+---

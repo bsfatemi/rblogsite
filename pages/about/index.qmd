@@ -1,0 +1,51 @@
+---
+title: About
+image: images/about-me-pic2.jpg
+about:
+  id: hero-heading
+  template: solana
+  image-width: 15em
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/r-data-science
+    - icon: linkedin
+      text: Linkedin
+      href: https://www.linkedin.com/in/bobbyfatemi
+---
+
+::: {#hero-heading}
+Bobby Fatemi is an experienced Data Scientist who has led major initiatives across industries that include Healthcare, Litigation, Robotics, and Retail. More recently, Bobby co-founded Happy Cabbage Analytics, a data analytics provider for Cannabis retail organizations. Serving on its Board of Directors, while having held the titles of Chief Technical Officer and Chief Data Officer, Bobby led the company to its first 20 employees and a $25M post-money valuation as of 2023.
+
+##### [Happy Cabbage](https://www.happycabbage.io/)
+
+As a leader in data science, with an interest in Cannabis legalization, Bobby cofounded Happy Cabbage in 2018 with the mission of providing cannabis consumers a better product experience by way of empowering retailers with data-driven decision making. With this aim in mind, Bobby architected and developed a retail-facing software platform along with the backend data infrastructure necessary to capture raw transactional data and provide enterprise insights and analytics at scale.
+Since its founding in 2018, Bobby and his team collected data for over 225M cannabis retail transactions, representing $5B in total sales from 22M distinct retail customers nationwide. Bobby utilized this data to understand and predict product demand, build customer preference profiles, and deploy ML models to drive automated marketing campaigns and inventory optimization, quickly becoming critical to the operations of over 300 large-scale cannabis retail organizations.
+
+
+##### [Intuitive Surgical](https://www.intuitive.com/en-us/about-us/company)
+
+Prior to Happy Cabbage, Bobby was the lead Data Scientist in identifying and surfacing real-world surgical learning curve models at Intuitive Surgical, the global leader in Robotic Assisted Surgery. With access to detailed robotic surgery data for over 12,000 surgeons worldwide and spanning 20 years, Bobby discovered the ability to identify a surgeon’s learning trajectory and pushed the effort to utilize these models as the foundation for quantifying Surgeon Performance and Operating Room efficiency. Bobby’s work at Intuitive would lead directly to large-scale efforts to pioneer data-driven surgeon credentialing and training programs globally.
+
+------------------------------------------------------------------------
+
+### Education
+
+Santa Clara University \| Santa Clara, CA
+
+-   B.A in Finance \| Sep 2009 - June 2013
+-   B.S in Mathematics \| Sep 2009 - June 2013
+-   B.S in Computer Science \| Sep 2009 - June 2013
+
+Magna Cum Laude \| Most Outstanding Graduate in Finance
+
+### Experience
+
+Happy Cabbage Analytics \| Co-founder/CTO \| 2019 - 2023
+
+Intuitive Surgical \| Research Data Scientist \| 2015 - 2019
+
+Analysis Group \| Senior Analyst \| 2014 - 2015
+
+Analysis Group \| Analyst \| 2013 - 2014
+:::

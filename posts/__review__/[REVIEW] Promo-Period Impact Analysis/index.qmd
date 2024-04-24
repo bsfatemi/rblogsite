@@ -1,0 +1,120 @@
+---
+title: "Promo-Period Impact Analysis"
+author: "Bobby Fatemi"
+date: "2023-06-20"
+categories: [insights]
+description: "This post describes the impact of a Kiva sales promotion held by Unrivaled between 2/6/2023 and 2/21/2023. The impact seen in this analysis begins with a lift of total unit sales for promoted products vs non promoted products, and then is broken out by customer type and retention."
+draft: true
+---
+
+# Background
+
+Unrivaled held a sales competition and a promotion of Kiva products for
+approximately 16 days and spent roughly \$3.5K for the payout on this
+promotion. The question then evaluated in this post is what was the ROI
+on the \$3.5K Unrivaled spent on this promotion. ROI is measured here
+directly as the lift in Units Sold for promoted products during the
+promotion period (vs. outside the promo period); however, additional
+longer-term positive impact is also observed that is less directly seen
+in the Sales numbers on the surface.
+
+# Surface Level Sales-Lift
+
+The overall impact described by Figure 1 below, shows that **Kiva units
+sold per day experienced a lift of +27%**. This correlates with the lift
+experienced in total sales in dollars. However, upon analysis of
+customer segments (prior Kiva customers vs. new Kiva customers) and
+customer retention (Retained Kiva customer vs. Lost Kiva customer), the
+impact of this sales promotion is much deeper and persists more
+long-term than a one-time sales lift seen on the surface.
+
+![Figure 1: Unit Sales Impact
+Overall](images/units_per_day_promoted_products.png)
+
+# New Kiva Customers and Retention
+
+In order to look deeper at the overall 27% sales lift, I first
+identified the segments of customers purchasing Kiva before and during
+the promotional period and classified each as New or Existing Kiva
+customers. Next, I analyzed *future orders* (orders occurring after the
+promotion period ends) to classify Kiva customers as Lost or Retained.
+Last, I compared segment statistics (i.e. customers per day, units sold
+per day, sales per day) across two periods[^1] to understand how the
+promo impacted customer retention.
+
+[^1]: The two periods at focus are the promotional period as well as the
+    same-size period immediately prior to the promotion
+
+## Summary Results
+
+After dissecting the order data to better understand the impact of the
+promotional period on customers based on their previous experience with
+Kiva, as well as looking at these customers future orders to know how
+well Kiva retained their business, I observed a large positive impact in
+customer retention rates among customers that were first introduced to
+Kiva during the promotional period. Most notably:
+
+-   The 16-day promotional period had a 51% increase in **retained**
+    **new Kiva customers per day**[^2], compared with the same-sized
+    period immediately prior ([Figure 2](#figure2))
+
+-   Furthermore, the dollars per day from **retained new Kiva
+    customers** increased by 64% during the promotion ([Figure
+    3](#figure3))
+
+-   The promotional period had a 21% increase in **existing Kiva
+    customers who continue to be retained** following the period, while
+    the percentage of Kiva customers who become lost after the period
+    declined by 4% ([Figure 5](#figure5))
+
+-   The overall **customer retention rate for new Kiva customers**
+    increased to 38% in the promo period vs. 28% for the prior period
+    ([Figure 5](#figure5))
+
+These results show that Unrivaled's promotion successfully increased
+sales as expected, while also driving a higher likelihood for first-time
+Kiva customers to re-purchase Kiva regularly following the period as
+seen in the customer retention statistics summarized above and shown in
+Figures below.
+
+[^2]: Customers whose first Kiva purchase falls within the period (**new
+    kiva customer**), but who continue to regularly repurchase Kiva
+    products (**retained kiva customer**).
+
+## Figures and Plots
+
+The following are the definitions of each customer segment shown in the
+Figures below.
+
+Lost Kiva Customer
+
+:   Kiva Customers that haven't repurchased Kiva and it's been at least
+    3 months since their last purchase
+
+Retained Kiva Customers
+
+:   Customers that have purchased Kiva regularly since their first Kiva
+    order, and have ordered Kiva within the last 3 months
+
+First Kiva Order
+
+:   These are customers that have purchased Kiva for the first time in
+    the period. Also referred to as *New Kiva Customers*
+
+Repeat Kiva Buyer
+
+:   Kiva customers that have purchased Kiva products in past orders.
+    Also referred to as *Existing Kiva Customers*
+
+![Figure 2: Comparison of Kiva Customers Per
+Day](images/kiva_customers_per_day.png){#figure2}
+
+![Figure 3: Comparison of Kiva Units Sold Per
+Day](images/kiva_units_sold_per_day.png){#figure3}
+
+![Figure 4: Comparison of Total Kiva Sales Per
+Day](images/kiva_sales_per_day.png){#figure4}
+
+![Figure 5: Comparison of Total Kiva
+Customers](images/total_kiva_customers.png){#figure5}
+

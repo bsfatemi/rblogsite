@@ -1,0 +1,167 @@
+---
+title: "Optimal Price of Kiva Products"
+author: "Bobby Fatemi"
+date: "2023-06-12"
+categories: [analysis, insights]
+description: "This post describes a pricing model that will identify the optimal price (one that maximizes demand) for various Kiva edible products; in addition, I summarize the price-point and discount level that maximize product sell-through for these Kiva products."
+image: "images/Price-Kiva-Camino-Gummies.png"
+draft: false
+---
+
+# Summary
+
+After modeling for the optimal price, one that maximizes demand level,
+and after normalizing demand across various sized organizations, **I
+find that Kiva Products on average are about 8% overpriced when
+comparing the average historical price items have been sold across all
+time, vs. the price that successful retailers are selling these products
+to acheive the maximum product sell-through possible at their retail
+locations.**
+
+To summarize the findings by product:
+
+-   To achieve maximum demand for [**Camino Gummies**]{.underline},
+    products are selling at an average discount of about 21% with a
+    final out the door price of roughly \$18.
+
+-   To achieve maximum demand for [**Kiva Chocolate Bars**]{.underline},
+    products are selling at an average discount of about 18% with a
+    final out the door price of roughly \$20.5.
+
+-   To achieve maximum demand for [**Kiva Terra Bites**]{.underline},
+    products are selling at an average discount of about 17% with a
+    final out the door price of roughly \$21.
+
+For a breakdown of the methodology and technical analysis results, see
+below.
+
+# Background
+
+Kiva is a very important brand in the cannabis market. Kiva brand offers
+many types of edible products. Notably, Gummies, Chocolate Bars,
+Chocolate covered bites (espresso beans, blueberries), and various
+flavors of Mints.
+
+Kiva products make up roughly 9% of the edibles market as shown in our
+data. Of all the Kiva branded products, here is the share of each
+(within Brand Kiva products being sold):
+
+|                     | Sales Since 2019 | Units Sold Since 2019 | Average Unit Price | Average Discount | Share of all Kiva Sales |
+|:--------------------|:-----------------|----------------------:|:-------------------|:-----------------|:------------------------|
+| Kiva Camino Gummies | \$16,512,816     |               841,581 | \$19.9             | 13%              | 62.5%                   |
+| Kiva Chocolate Bars | \$4,035,526      |               189,080 | \$21.5             | 15%              | 14.0%                   |
+| Kiva Terra Bites    | \$3,572,374      |               157,131 | \$23.0             | 12%              | 11.7%                   |
+| Kiva Mints          | \$1,798,838      |               101,586 | \$17.8             | 9%               | 7.5%                    |
+| Kiva Other Products | \$1,232,026      |                58,129 | \$21.4             | 11%              | 4.3%                    |
+
+# Objective
+
+The objective of this analysis is to identify the optimal price point of
+the top 3 Kiva products offered on the market. The aim is to develop a
+price-demand model based on the **observed sell-through rate** (i.e.
+Demand) of each product and changes in the price. The model will
+identity the correlation between sales and demand
+
+# Methodology
+
+1.  The observed sell-through rate (also referred to as Sales Velocity)
+    is first estimated as Units Sold Per Week and calculated at the org
+    and facility level.
+
+2.  Once I have this weekly metric for every org and facility (with data
+    going back to 2019), I calculate the average weekly price of each of
+    the Kiva product segments in focus (Gummies, Chocolate Bars, and
+    Terra Bites), as well as the weekly average percentage discount rate
+    offered to retail customers.
+
+3.  Next, since each org offers these products to a varying sized
+    customer base, the value of Unit Sales per week isn't an appropriate
+    relative comparison across orgs; therefore in order to understand
+    demand, I must normalize Sell-Through velocity.
+
+4.  The normalized velocity is then called 'Demand' and expressed as a
+    percentage between 0 and 100, where 100 represents the observed
+    maximum demand level for any given org.
+
+5.  After retrieving the normalized weekly demand for every org, I then
+    model the correlation between price changes and changes in
+    percentage demand. The results give us an indication of the price
+    level which maximizes demand across all orgs.
+
+6.  Furthermore, the demand level can be grouped to give us summary
+    statistics that offer an indication of the discounting performed to
+    reach such a price.
+
+## Note about the Model:
+
+Demand is expressed as a function $Demand = F(P)$; where $F(P)$ (being a
+function of Price) is estimated with the following equation using a
+Generalized Additive Model (GAM): $F(P) = B_2(ln(P) * ln(P + 1)) + B_1$.
+This Model gives us the expected shape of a price/demand relationship
+and the data supports such a fit as can be seen in the results section
+below.
+
+> For this model, the term $B_2$ can be considered the price elasticity
+> of demand depending on the product type (Chocolate Bar, Camino Gummy,
+> or Terra Bites) and $B_1$ is considered the minimum level of demand
+> for such a product. The accuracy metrics for this model are the model
+> $R^2$, the model $p-value$ as well as the model $F-statistic$. The
+> accuracy for this model ranges from 80% (Kiva Terra Bites) to 90%
+> (Kiva Chocolate Bars) while the confidence interval around the model's
+> fit is 95%.
+
+# Results
+
+The model fit on the historical data is shown in the figures below,
+however the following table highlights the summary of the output (e.g.
+optimal price that maximizes demand) that is extracted from the models
+for each product.
+
+| Product             | Optimal Price (Model Output) | Current Historical Average Price |
+|---------------------|------------------------------|----------------------------------|
+| Kiva Camino Gummies | \$17.9                       | \$19.9                           |
+| Kiva Chocolate Bars | \$20.5                       | \$21.5                           |
+| Kiva Terra Bites    | \$20.9                       | \$23.0                           |
+
+## Kiva Camino Gummies
+
+> **In summary, to achieve maximum demand for Camino Gummies, products
+> are selling at an average discount of about 21% with a final out the
+> door average price of roughly \$18.**
+
+The following plot describes the model being fit on normalized demand
+data for all orgs. The x-axis describes the percentage demand which is
+simply the normalized product sell-through velocity, while the y-axis is
+the average unit prices. This plot shows the correlation between changes
+in price and changes in demand as observed in the data.
+
+![Optimal Pricing of Kiva Camino
+Gummies](images/Price-Kiva-Camino-Gummies.png)
+
+The plot below summarizes the average discount level offered seen at
+various levels of demand while also highlighting the average price of
+units sold in each group.
+
+![Discount Pricing and Demand Summary for Kiva Camino
+Gummies](images/Disc-Demand-Camino-Gummies-Barplot.png)
+
+## Kiva Chocolate Bars (100mg)
+
+> **In summary, to achieve maximum demand for Kiva Chocolate Bars,
+> products are selling at an average discount of about 18% with a final
+> out the door average price of roughly \$21.**
+
+![Optimal Pricing of Kiva Chocolate
+Bars](images/Price-Kiva-Chocolate-Bars.png)
+
+![Discount Demand Summary for Kiva Chocolate
+Bars](images/Disc-Demand-Chocolate-Bars-Barplot.png)
+
+## Kiva Terra Bites
+
+> **In summary, to achieve maximum demand for Kiva Terra Bites, products
+> are selling at an average discount of about 17% with a final out the
+> door average price of roughly \$20.5.**
+
+![Optimal Pricing of Kiva Terra
+Bites](images/Price-Kiva-Terra-Bites.png)

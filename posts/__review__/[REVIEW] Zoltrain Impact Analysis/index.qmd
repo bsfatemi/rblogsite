@@ -1,0 +1,67 @@
+---
+title: "Zoltrain Impact Analysis (Continued)"
+author: "Bobby Fatemi"
+date: "2023-06-15"
+categories: [insights]
+description: "This post is a follow-up to the initial post that described the impact of Zoltrain Rewards on sales at retailer Unrivaled. In this follow-up analysis, I expanded the scope of retailers as well as brands to study how the results compare to the boost identified at Unrivaled."
+image: "images/image_2.png"
+draft: true
+---
+
+> Brands that offered rewards at retailers Kind Peoples, Nug, MMD, and
+> High Times, experienced an average increase in sales of +78% during
+> the period in which Rewards were being redeemed by Budtenders relative
+> to a prior period in which no rewards were being redeemed. This is
+> very consistent with and supports the initial results of +67% at
+> Unrivaled. A breakdown of brands and stores can be found in the tables
+> below.
+
+![](images/image_2.png)
+
+![](images/image_3.png)
+
+The following can be extracted as takeaways based on the analysis
+conducted for this post:
+
+-   Kind Peoples (e.g. Highway Cannabis) is a retailer that has invested
+    heavily in Zoltrain's rewards program, which is reflected in its
+    results
+
+-   The results suggest that a rewards program being taken advantage of
+    by budtenders consistently over a period of multiple months produce
+    the maximum impact at the retail location
+
+-   CLSICS and PAX lead the field of brands in terms of offering the
+    most rewards and the sales lift impact driven by budtenders
+    redeeming such rewards
+
+-   Rewards have less impact when they are offered sporadically over the
+    course of 6 months to a year. For example:
+
+    -   At Kind Peoples, PAX rewards were redeemed in 11 of the 16
+        months (at Oceanstreet) and 10 of the 17 months (at Soquel)
+        during the rewards period, and this has maximized the impact to
+        Sales (+221% and +145% respectively). See appendix for the plot
+        describing this.
+
+    -   Additionally, CLSICS at Kind Peoples (Soquel) where the rewards
+        period was 4 weeks and 3 of the weeks had rewards redeemed by
+        budtenders at very positive impact. In compared with the prior 4
+        weeks in which no rewards were redeemed, CLSICS experienced a
+        +279% bump. See appendix for the plot describing this.
+
+# Appendix
+
+The following plots are a subset of the results that highlight key
+takeaways mentioned above.
+
+![](images/highwaycannabis_kindpeoplesocean_PAX.png)
+
+![](images/highwaycannabis_kindpeoplessoquel_PAX.png)
+
+![](images/highwaycannabis_kindpeoplesocean_CLSICS.png)
+
+![](images/highwaycannabis_kindpeoplessoquel_CLSICS.png)
+
+![](images/hightimes_coalinga_KANHA.png)
+

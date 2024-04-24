@@ -1,0 +1,8 @@
+---
+title: "Measuring Store Loyalty in Cannabis"
+author: "Bobby Fatemi"
+date: "2023-10-03"
+categories: [insights]
+description: "A common retail term, 'Store Loyalty', is often difficult to measure. This post aims to identify customers in our data that have purchases across hca organizations with the goal of producing a metric that best describes how well retailer organizations perform against a common benchmark."
+draft: true
+---

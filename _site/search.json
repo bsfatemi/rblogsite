@@ -1,0 +1,373 @@
+[
+  {
+    "objectID": "posts/Supply Chain Volatility in Cannabis/index.html",
+    "href": "posts/Supply Chain Volatility in Cannabis/index.html",
+    "title": "Supply Chain Volatility in Cannabis",
+    "section": "",
+    "text": "This post is focused on the impact of supply chain volatility on retailer inventory overhead costs, specifically, I aim to define the supply chain problem facing cannabis retailers, and discuss strategies to reduce inventory overhead costs while ensuring sufficient product coverage1 to meet growing demand."
+  },
+  {
+    "objectID": "posts/Supply Chain Volatility in Cannabis/index.html#background",
+    "href": "posts/Supply Chain Volatility in Cannabis/index.html#background",
+    "title": "Supply Chain Volatility in Cannabis",
+    "section": "",
+    "text": "This post is focused on the impact of supply chain volatility on retailer inventory overhead costs, specifically, I aim to define the supply chain problem facing cannabis retailers, and discuss strategies to reduce inventory overhead costs while ensuring sufficient product coverage1 to meet growing demand."
+  },
+  {
+    "objectID": "posts/Supply Chain Volatility in Cannabis/index.html#exploring-the-data",
+    "href": "posts/Supply Chain Volatility in Cannabis/index.html#exploring-the-data",
+    "title": "Supply Chain Volatility in Cannabis",
+    "section": "Exploring The Data",
+    "text": "Exploring The Data\nThe data I utilized for this analysis are daily inventory snapshots beginning on 4/12/22 and ending on 9/24/23. The data for this time period includes roughly 385K unique products across 118 retail locations.\nHere are a few key insights on the retailers I studied:\n\n\n\n\n\n\nOn average, Retailers…\n\nCarry 730 products in inventory on any given day, and 2,300 unique products over the course of a year\nHave 500K units across all products in inventory on a given day\nThe average cost of inventory held by the retailer on a given day is roughly $120K, equating to an average of roughly $500 in costs per product in stock\nCarry products that are available to sell for 72 days of the year, while being out of stock for roughly 20% of the time between its’ first sale and last sale (see figure below)\n\n\n\n\n\n\n\n\n\nIn short, products that have reoccurring supply (resupplied more than once) during this period, tend to go out of stock every 5 days (e.g. 20% of the days within its’ sales period), causing a sales disruption. This can be seen in the figure above which shows the average sales period for products by org, and identifies the proportion of days in and out of stock during the sales period."
+  },
+  {
+    "objectID": "posts/Supply Chain Volatility in Cannabis/index.html#supply-chain-volatility",
+    "href": "posts/Supply Chain Volatility in Cannabis/index.html#supply-chain-volatility",
+    "title": "Supply Chain Volatility in Cannabis",
+    "section": "Supply Chain Volatility",
+    "text": "Supply Chain Volatility\nIn cannabis, we see evidence that consumer demand is much more predictable than supply. In fact, in response to this supply chain volatility, retailers are often overstocking products due to the uncertainty around future availability from suppliers. This results in growing inventory costs over time, as the natural tendency in a highly competitive industry is to ensure products are always available to meet demand. In an environment where products are highly interchangeable, such as in the cannabis space, inventory can and should be optimized to address supply chain issues.\n\n\n\n\n\n\nWhat does “optimized inventory” look like…\n\n\n\nOptimized inventory ensures that a retailer can meet changing demand without incurring additional and unnecessary inventory costs. In practical terms, over a long period of time (in the case of this analysis 75 weeks), it is reasonable to expect that inventory costs should be correlated with sales trends over the same period.\n\n\nFor this group of retailers studied here that show increasing inventory levels, we can see in the figure below that their trend in inventory is not correlated with growth in sales."
+  },
+  {
+    "objectID": "posts/Supply Chain Volatility in Cannabis/index.html#results-of-analysis",
+    "href": "posts/Supply Chain Volatility in Cannabis/index.html#results-of-analysis",
+    "title": "Supply Chain Volatility in Cannabis",
+    "section": "Results of Analysis",
+    "text": "Results of Analysis\nOf the 118 retailers whose inventory I studied over the course of 75 weeks, 82% of these stores experience highly volatile and/or growing inventory at a rate that far exceeds any growth in sales. This is very consistent with the notion that supply chain volatility leads to highly volatile retail inventory levels (both as measured by the costs to carry stock, as well as the total units on hand for any given week) and is additional evidence that overstocking is an issue affecting retailers industry-wide.\n\n\n\n\n\n\nNearly half of the retailers that comprise the 82% are experiencing highly accelerated growth in both total units on hand in a given week as well as total inventory costs carried per week. While the remaining experience unsustainable swings in total units available week to week.\n\n\n\n\nGrowth in Weekly Stock\nThe chart below shows the average weekly percent change in total inventory units on hand (all products) for 39 retail locations. Additionally, we can see the 85% confidence interval in red around each week in the period, as well as the week to week group average shown with the black line.\n\n\n\n\n\n\nThese 39 retail locations show a 250% year over year growth of total units carried in inventory, relative to the amount of stock carried in week one\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote, weekly stock is defined as the total units carried (across all rooms for a retailer). Additionally, in the charts shown, weekly stock level is expressed as a percentage relative to the amount of stock carried in week one. This lets us normalize retailers of varying sizes in order to draw a fair comparison when analyzing how inventory changes overtime.\n\n\n\n\n\n\nVolatility in Weekly Stock\nThe chart below shows the average weekly % change in total inventory units on hand (all products) for 54 retail locations. Similar to the plot above, the blue demonstrates the 85% confidence interval around the average per week, while the black line represents the average over time for the group.\n\n\n\n\n\n\nFor these 54 retail locations, we see roughly no change in units on hand between the first week and last week in the period, however during the course of the year, inventory levels swing as low as 50% and as high as 200% relative to the amount of stock carried in week one.\n\n\n\n\n\n\n\n\n\n\n\nDeclining Weekly Stock (Total Units Carried)\nThe remaining 18% of retailers are adequately reducing inventory costs while maintaining or growing sales over the same period."
+  },
+  {
+    "objectID": "posts/Supply Chain Volatility in Cannabis/index.html#footnotes",
+    "href": "posts/Supply Chain Volatility in Cannabis/index.html#footnotes",
+    "title": "Supply Chain Volatility in Cannabis",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nProduct coverage describes how well a retailer’s menu meets the demand of their customer base. Gaps in product coverage tend to lead to missed sales revenue and customer attrition↩︎"
+  },
+  {
+    "objectID": "posts/Declining Prices in Cannabis/index.html",
+    "href": "posts/Declining Prices in Cannabis/index.html",
+    "title": "Declining Prices in Cannabis",
+    "section": "",
+    "text": "Here is a comparison of average unit prices in the months of January 2022 vs May 2023:"
+  },
+  {
+    "objectID": "posts/Declining Prices in Cannabis/index.html#analyzing-vape-product-prices",
+    "href": "posts/Declining Prices in Cannabis/index.html#analyzing-vape-product-prices",
+    "title": "Declining Prices in Cannabis",
+    "section": "Analyzing Vape Product Prices",
+    "text": "Analyzing Vape Product Prices\nAs an example of the analysis we do internally, I’ve decided to focus on Vapes to highlight our findings.\nLooking deeper at the price of vapes, I analyzed and found that 57 total orgs had a statistically significant upward or downward trajectory. Of those 57, the majority had declining prices (49). For those 49 organizations, the following chart shows the average monthly price since January 2022."
+  },
+  {
+    "objectID": "posts/Declining Prices in Cannabis/index.html#a-look-at-other-categories",
+    "href": "posts/Declining Prices in Cannabis/index.html#a-look-at-other-categories",
+    "title": "Declining Prices in Cannabis",
+    "section": "A Look at Other Categories",
+    "text": "A Look at Other Categories\nThe chart below highlights all product category prices over time. As can be seen, only two categories have no declining trajectory in average product price."
+  },
+  {
+    "objectID": "posts/Customer LTV in Cannabis/index.html",
+    "href": "posts/Customer LTV in Cannabis/index.html",
+    "title": "Customer LTV in Cannabis",
+    "section": "",
+    "text": "This post aims to arrive at a defensible prediction for a cannabis customer’s LTV, as well as estimate of the length of their lifetime, and finally, to use these insights to better understand the purchase behavior of retained customers in the cannabis market."
+  },
+  {
+    "objectID": "posts/Customer LTV in Cannabis/index.html#objective",
+    "href": "posts/Customer LTV in Cannabis/index.html#objective",
+    "title": "Customer LTV in Cannabis",
+    "section": "",
+    "text": "This post aims to arrive at a defensible prediction for a cannabis customer’s LTV, as well as estimate of the length of their lifetime, and finally, to use these insights to better understand the purchase behavior of retained customers in the cannabis market."
+  },
+  {
+    "objectID": "posts/Customer LTV in Cannabis/index.html#summary-of-results",
+    "href": "posts/Customer LTV in Cannabis/index.html#summary-of-results",
+    "title": "Customer LTV in Cannabis",
+    "section": "Summary of Results",
+    "text": "Summary of Results\nIn this analysis, I demonstrate that the average length of a customer’s lifetime is about 10 quarters or nearly 3 years, additionally, a retained customer will have about 55 orders and spend roughly $7K over this period.\nUsing the insights here, we can begin to understand how important retention is in cannabis through the purchase behavior of retained customers:\n\nRetained customers return on average every 3 weeks\nRetained customers spend on average $130 per order\nRetained customers generate on average $7K in sales\nRetained customers are loyal for an average period of 3 years"
+  },
+  {
+    "objectID": "posts/Customer LTV in Cannabis/index.html#methodology",
+    "href": "posts/Customer LTV in Cannabis/index.html#methodology",
+    "title": "Customer LTV in Cannabis",
+    "section": "Methodology",
+    "text": "Methodology\nIn this analysis, I explore customer cohorts for a sampled set of orgs on a quarterly basis for a 5-year period. Using their sales data, I first model a rate of drop off of those customers. Next I analyze sales attrition as well as orders attrition from the decreasing pool of customers each quarter. Lastly, I derive an estimate for LTV and use that to better understand the purchase behavior of retained customers in the cannabis market."
+  },
+  {
+    "objectID": "posts/Customer LTV in Cannabis/index.html#analysis",
+    "href": "posts/Customer LTV in Cannabis/index.html#analysis",
+    "title": "Customer LTV in Cannabis",
+    "section": "Analysis",
+    "text": "Analysis\nI first estimated the length of a customers average life-time by analyzing cohorts of customers for a set of sampled orgs. For example, using one org in my sample, I identified 212 customers with transactions in Q2 of 2018, and tracked these particular customers, their orders, and their sales, across quarters until Q2 2023. In the last quarter only 34 of these customers remain with purchases in each period. This attrition curve reaches 50% by roughly the 10th quarter (e.g. 50% of the customers remain after 10 quarters).\nThis plot demonstrates the average lifetime of a cannabis consumer:\n\n\n\nFigure 1: Customer attrition by quarter\n\n\nOnce we arrived at a lifetime estimate of 10 quarters, I analyzed the average sales, and the average orders per quarter for these customers.\n\nI found that on average customers will return for nearly 3 years and spend 7K across 55 orders in their lifetimes\n\nThe figures below track both sales and orders coming from the customers identified across time:\n\n\n\nFigure 2: Sales attrition by quarter\n\n\n\n\n\nFigure 3: Attrition of orders by quarter"
+  },
+  {
+    "objectID": "posts/A Gentle Intro to Surgical Performance/index.html",
+    "href": "posts/A Gentle Intro to Surgical Performance/index.html",
+    "title": "A Gentle Intro to Surgical Performance",
+    "section": "",
+    "text": "In my prior work as a data scientist working in the medical/healthcare space, I got the opportunity to work closely with Surgeons at major academic institutions across the United States. My role at the time was to partner with hospital networks or individual academic surgeons in a joint research initiative to set up a data architecture and execute on a long-term data collection effort focused only on surgical performance KPIs, namely Surgical Efficiency and Proficiency metrics1.\nMost importantly, these efforts were conducted at scale and would result in the aggregation of a massive amount of longitudinal metrics describing Surgical Actions.\n\nSurgical Actions\n\nTime-stamped records of actions performed by the surgeon over the course of a surgical procedure\n\nSurgical Efficiency\n\nMetrics describing the operating efficiency of an OR Team and Surgeon working together to complete a surgical procedure\n\nSurgical Proficiency\n\nBenchmarks describing the relative expertise level of a surgeon performing a procedure\n\n\n\n\nThe dataset ultimately collected covered thousands of surgeons across the United States over a period of 5 years. The population of Surgeons in the data included a wide range of experience levels ranging from novice, having performed fewer than 10 procedures, to expert surgeons that have completed more than 300 procedures. Additionally, the population of surgeons include a many different surgical specialties, performing a wide range of cases including gynecological, thoracic, cardiac, and more."
+  },
+  {
+    "objectID": "posts/A Gentle Intro to Surgical Performance/index.html#background-of-research",
+    "href": "posts/A Gentle Intro to Surgical Performance/index.html#background-of-research",
+    "title": "A Gentle Intro to Surgical Performance",
+    "section": "",
+    "text": "In my prior work as a data scientist working in the medical/healthcare space, I got the opportunity to work closely with Surgeons at major academic institutions across the United States. My role at the time was to partner with hospital networks or individual academic surgeons in a joint research initiative to set up a data architecture and execute on a long-term data collection effort focused only on surgical performance KPIs, namely Surgical Efficiency and Proficiency metrics1.\nMost importantly, these efforts were conducted at scale and would result in the aggregation of a massive amount of longitudinal metrics describing Surgical Actions.\n\nSurgical Actions\n\nTime-stamped records of actions performed by the surgeon over the course of a surgical procedure\n\nSurgical Efficiency\n\nMetrics describing the operating efficiency of an OR Team and Surgeon working together to complete a surgical procedure\n\nSurgical Proficiency\n\nBenchmarks describing the relative expertise level of a surgeon performing a procedure\n\n\n\n\nThe dataset ultimately collected covered thousands of surgeons across the United States over a period of 5 years. The population of Surgeons in the data included a wide range of experience levels ranging from novice, having performed fewer than 10 procedures, to expert surgeons that have completed more than 300 procedures. Additionally, the population of surgeons include a many different surgical specialties, performing a wide range of cases including gynecological, thoracic, cardiac, and more."
+  },
+  {
+    "objectID": "posts/A Gentle Intro to Surgical Performance/index.html#producing-surgical-performance-kpis",
+    "href": "posts/A Gentle Intro to Surgical Performance/index.html#producing-surgical-performance-kpis",
+    "title": "A Gentle Intro to Surgical Performance",
+    "section": "Producing Surgical Performance KPIs",
+    "text": "Producing Surgical Performance KPIs\nThe the raw point-in-time Surgical Actions data collected would ultimately be transformed, and the resulting data is best described as event-based and resembled the following:\n\n\n\n\n\n\nStep II - Events Processed From Raw Surgical Actions\n\n\n\n\n8:45:01AM - OR Team Pre-Op Setup Begins\n8:55:16AM - OR Team Pre-Op Setup Completes\n8:57:05AM - Surgeon Begins Procedure\n8:57:05AM - Surgeon Uses Instrument X (3 minutes and 5 seconds)\n9:00:10AM - Surgeon Switches Instrument X with Y\n9:00:55AM - Surgeon Idle For 45 seconds\n9:03:05AM - Surgeon Uses Instrument Y (2 minutes and 45 seconds)\n9:05:50AM - Surgeon Completes Procedure\n9:05:50AM - OR Team Post-Op Process Begins\n9:15:10AM - OR Team Post-Op Process Completes\n\n\nThe events above would then be summarized into procedure-level metrics that describe surgical proficiency, efficiency, or both\n\n\n\n\n\n\nStep III - Metrics Summarized From Events Data\n\n\n\n\n\nEfficiency Metrics\nTotal OR Procedure Duration……………… 30 minutes and 9 seconds\nTotal Surgeon Operating Time……………. 5 minutes and 50 seconds\nTotal Surgeon Idle Duration……………….. 45 seconds\nTotal Non-Surgery Duration……………….. 20 minutes 35 seconds\n\n\nProficiency Metrics\nUnique Surgical Instruments Used……… 2\nTotal Surgical Instrument Swaps…………. 1\n\n\n\nLastly, these metrics would then be translated to KPIs, benchmarked against a target performance level2, and presented to the Executive Stakeholders of this work.\n\n\n\n\n\n\nStep IV - Translate Procedure Metrics to Performance KPIs\n\n\n\n\n\nSurgeon Efficiency Rate - 88%\nFalls within the Highly Efficient Range\n\n\nOR Team Efficiency Rate - 65%\nFalls within the Average Efficiency Range"
+  },
+  {
+    "objectID": "posts/A Gentle Intro to Surgical Performance/index.html#whats-next",
+    "href": "posts/A Gentle Intro to Surgical Performance/index.html#whats-next",
+    "title": "A Gentle Intro to Surgical Performance",
+    "section": "What’s Next",
+    "text": "What’s Next\nOnce there was enough of these historical surgical actions data collected, that’s when the interesting part of my work would begin… the analysis!\nSubscribe to my blog and stay tuned for upcoming posts where I dive into this work and share some fascinating insights effort to develop Surgical Learning Curve models, and further present a case study where I demonstrate how to use these models as the foundation for assessing the surgical expertise and monitoring novice surgeons as they progress along their own learning curves."
+  },
+  {
+    "objectID": "posts/A Gentle Intro to Surgical Performance/index.html#footnotes",
+    "href": "posts/A Gentle Intro to Surgical Performance/index.html#footnotes",
+    "title": "A Gentle Intro to Surgical Performance",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nIn this work, we were primarily interested in data about the Surgeons, and observational metrics describing their performance during the procedure, rather than healthcare outcomes. Thus, no personally identifiable information was collected. This simplified our work ensuring all HIPAA rules and regulations were satisfied.↩︎\nThe Target Performance for benchmarking would be derived by identifying a control group of Surgeons with high experience levels and are known to be both efficient and proficient. The metric values for these expert surgeons would guide the assessment of performance for all other Surgeons.↩︎"
+  },
+  {
+    "objectID": "pages/about/index.html",
+    "href": "pages/about/index.html",
+    "title": "About",
+    "section": "",
+    "text": "Github\n  \n  \n    \n     Linkedin\n  \n\n      \nBobby Fatemi is an experienced Data Scientist who has led major initiatives across industries that include Healthcare, Litigation, Robotics, and Retail. More recently, Bobby co-founded Happy Cabbage Analytics, a data analytics provider for Cannabis retail organizations. Serving on its Board of Directors, while having held the titles of Chief Technical Officer and Chief Data Officer, Bobby led the company to its first 20 employees and a $25M post-money valuation as of 2023.\n\nHappy Cabbage\nAs a leader in data science, with an interest in Cannabis legalization, Bobby cofounded Happy Cabbage in 2018 with the mission of providing cannabis consumers a better product experience by way of empowering retailers with data-driven decision making. With this aim in mind, Bobby architected and developed a retail-facing software platform along with the backend data infrastructure necessary to capture raw transactional data and provide enterprise insights and analytics at scale. Since its founding in 2018, Bobby and his team collected data for over 225M cannabis retail transactions, representing $5B in total sales from 22M distinct retail customers nationwide. Bobby utilized this data to understand and predict product demand, build customer preference profiles, and deploy ML models to drive automated marketing campaigns and inventory optimization, quickly becoming critical to the operations of over 300 large-scale cannabis retail organizations.\n\n\nIntuitive Surgical\nPrior to Happy Cabbage, Bobby was the lead Data Scientist in identifying and surfacing real-world surgical learning curve models at Intuitive Surgical, the global leader in Robotic Assisted Surgery. With access to detailed robotic surgery data for over 12,000 surgeons worldwide and spanning 20 years, Bobby discovered the ability to identify a surgeon’s learning trajectory and pushed the effort to utilize these models as the foundation for quantifying Surgeon Performance and Operating Room efficiency. Bobby’s work at Intuitive would lead directly to large-scale efforts to pioneer data-driven surgeon credentialing and training programs globally.\n\n\n\nEducation\nSanta Clara University | Santa Clara, CA\n\nB.A in Finance | Sep 2009 - June 2013\nB.S in Mathematics | Sep 2009 - June 2013\nB.S in Computer Science | Sep 2009 - June 2013\n\nMagna Cum Laude | Most Outstanding Graduate in Finance\n\n\nExperience\nHappy Cabbage Analytics | Co-founder/CTO | 2019 - 2023\nIntuitive Surgical | Research Data Scientist | 2015 - 2019\nAnalysis Group | Senior Analyst | 2014 - 2015\nAnalysis Group | Analyst | 2013 - 2014"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "All Things Data Science",
+    "section": "",
+    "text": "Featured\n\nMy posts focused on cannabis retail and consumer insights published on The Patch. For more about me, see here and don’t hesitate to contact me!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Sales Impact from Budtender Incentives Part 1\n\n\n\n\n\n\n\nThe Sales Impact from Budtender Incentives Part 2\n\n\n\n\n\n\n\nThe Lifetime Value of a Retail Customer in Cannabis\n\n\n\n\n\n\n\nSave Cash by Stocking Exactly to Demand\n\n\n\n\n\n\n\nStop Lighting Money on Fire: The Truth About Discounts and Profit\n\n\n\n\n\n\n\nCannabis Sales Losses From Out-of-Stock Products\n\n\n\n\n\nPrevoius\n\n\n\nNext\n\n\n\n\n\n\n\n\n\n\n\nBlog Apps\n\n\n\nMany of these posts have associated Shiny Apps or R packages. To see more visit my analytics page or go to my app portal and sign in with google to demo all public apps.\n\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nThe Actual Learning Curve of a Real Surgeon\n\n\n\n\n\n\n\nRobotic Surgery\n\n\n\n\nThis post presents the real observed learning curve for a surgeon over the course of their first year performing Prostatectomy cases.\n\n\n\n\n\n\nFeb 20, 2024\n\n\nBobby Fatemi\n\n\n2 min\n\n\n\n\n\n\n  \n\n\n\n\nInfluencing the Learning Curve in Robotic Assisted Surgery\n\n\n\n\n\n\n\nRobotic Surgery\n\n\n\n\nThis post describes results from an analysis of Surgical Learning Curve models, as well as factors that can accelerate a surgeon’s proficiency in robotic assisted procedures.\n\n\n\n\n\n\nFeb 5, 2024\n\n\nBobby Fatemi\n\n\n4 min\n\n\n\n\n\n\n  \n\n\n\n\nAssessing Performance with Surgical Learning Curves\n\n\n\n\n\n\n\nRobotic Surgery\n\n\n\n\nThis post provides an approach to assess Surgical Efficiency and Surgeon Performance using learning curve models derived from robotic procedure data.\n\n\n\n\n\n\nFeb 4, 2024\n\n\nBobby Fatemi\n\n\n4 min\n\n\n\n\n\n\n  \n\n\n\n\nA Gentle Intro to Surgical Performance\n\n\n\n\n\n\n\nRobotic Surgery\n\n\n\n\nThis post provides a gentle introduction to benchmarking Surgical Performance, while highlighting the motivation for this work, the data collected in the effort, and the process of transforming the raw data into surgical performance KPIs presented to key Hospital and Surgeon stakeholders.\n\n\n\n\n\n\nDec 12, 2023\n\n\nBobby Fatemi\n\n\n4 min\n\n\n\n\n\n\n  \n\n\n\n\nImpact of Product Stockouts\n\n\n\n\n\n\n\ncannabis\n\n\nanalysis\n\n\nretail\n\n\n\n\nThis post demonstrates one method for measuring the lost opportunity in sales dollars when a primary product with regular sales experiences numerous stockouts during a 90 day sales period.\n\n\n\n\n\n\nOct 11, 2023\n\n\nBobby Fatemi\n\n\n6 min\n\n\n\n\n\n\n  \n\n\n\n\nSupply Chain Volatility in Cannabis\n\n\n\n\n\n\n\ncannabis\n\n\nanalysis\n\n\n\n\nThis post examines daily inventory levels for 385K unique products across 118 retail locations for the past 530 days in order understand the impact that supply chain volatility can have on retail organizations in Cannabis\n\n\n\n\n\n\nSep 25, 2023\n\n\nBobby Fatemi\n\n\n5 min\n\n\n\n\n\n\n  \n\n\n\n\nCustomer LTV in Cannabis\n\n\n\n\n\n\n\ncannabis\n\n\nanalysis\n\n\nretail\n\n\n\n\nThis post explores estimating a customer’s life-time value (LTV) metric for cannabis consumers.\n\n\n\n\n\n\nAug 14, 2023\n\n\nBobby Fatemi\n\n\n2 min\n\n\n\n\n\n\n  \n\n\n\n\nOptimal Price of Kiva Products\n\n\n\n\n\n\n\nanalysis\n\n\ninsights\n\n\n\n\nThis post describes a pricing model that will identify the optimal price (one that maximizes demand) for various Kiva edible products; in addition, I summarize the price-point and discount level that maximize product sell-through for these Kiva products.\n\n\n\n\n\n\nJun 12, 2023\n\n\nBobby Fatemi\n\n\n8 min\n\n\n\n\n\n\n  \n\n\n\n\nExploring Customer Segments\n\n\n\n\n\n\n\ncannabis\n\n\nexploratory\n\n\n\n\nThis post explores customer segmentation in retail Cannabis. Here we defines these segments as well as nine product categories that play an important role in classifying customers by preference.\n\n\n\n\n\n\nMay 31, 2023\n\n\nBobby Fatemi\n\n\n11 min\n\n\n\n\n\n\n  \n\n\n\n\nDiscount Demand Modeling\n\n\n\n\n\n\n\ninsights\n\n\nanalysis\n\n\n\n\nThis post describes the impact that increasing or decreasing the discount rate of a product has on the demand of such products. This is often referred to as the Discount Elasticity of Demand.\n\n\n\n\n\n\nMay 30, 2023\n\n\nBobby Fatemi\n\n\n3 min\n\n\n\n\n\n\n  \n\n\n\n\nDeclining Prices in Cannabis\n\n\n\n\n\n\n\ncannabis\n\n\ninsights\n\n\nretail\n\n\n\n\nThis post descibes an analysis of unit prices retail organizations, and focuses on prices of the three largest product categories in the cannabis market: Flower, Vape, and Edible products.\n\n\n\n\n\n\nMay 26, 2023\n\n\nBobby Fatemi\n\n\n3 min\n\n\n\n\n\n\n  \n\n\n\n\nConsumer Age by Category\n\n\n\n\n\n\n\ncannabis\n\n\ninsights\n\n\n\n\nThis post demonstrates the differences in the distribution of Age (of all cannabis consumers between January and May 2023) across cannabis product categories.\n\n\n\n\n\n\nMay 23, 2023\n\n\nBobby Fatemi\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "pages/analytics/index.html",
+    "href": "pages/analytics/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Blog Apps\nThese are a few of my apps that have associated blog posts and\ndemonstrate the value of transactional data for large-scale retail\norganizations in cannabis.\n\n\n\n  \n    \n      \n        House Brands KPIs\n        \n          \n        \n        \n      \n    \n    \n      \n    \n    \n        Evaluating the sales performance of a retailer owned house brand across various performance KPIs.\n      \n  \n  \n    \n      \n        Stockout Sales Impact\n        \n          \n        \n        \n      \n    \n    \n      \n    \n    \n        Estimating the impact from supply chain interuptions on Cannabis retail sales.\n      \n  \n  \n    \n      \n        Event Impact KPIs\n        \n          \n        \n        \n      \n    \n    \n      \n    \n    \n        Evaluating the impact across various business success KPIs from the adoption of Happy Cabbage.\n      \n  \n  \n    \n      \n        Product Restock Model\n        \n          \n        \n        \n      \n    \n    \n      \n    \n    \n        Generate recommendations on whether products in inventory should (or not) be restocked.\n      \n  \n  \n    \n      \n        Employee Sales KPIs\n        \n          \n        \n        \n      \n    \n    \n      \n    \n    \n        Evaulating retail store employees across various sales-driven performance KPIs.\n      \n  \n\n\nNo matching items\n\n\n\n\n\nR Packages\nMy publicly available R packages.\n\n\n\n  \n    \n      \n        RestockML\n        \n          \n        \n        \n      \n    \n    \n      \n    \n    \n        R package containing app Product Restock Model\n      \n  \n  \n    \n      \n        rblogapps\n        \n          \n        \n        \n      \n    \n    \n      \n    \n    \n        R package containing a collection of blog-related apps\n      \n  \n  \n    \n      \n        apptemplate1\n        \n          \n        \n        \n      \n    \n    \n      \n    \n    \n        Shiny app R package template with code-coverage and app tests using shinytest2\n      \n  \n  \n    \n      \n        rdstools\n        \n          \n        \n        \n      \n    \n    \n      \n    \n    \n        A minimal package containing commonly used development and logging tools\n      \n  \n  \n    \n      \n        rpgconn\n        \n          \n        \n        \n      \n    \n    \n      \n    \n    \n        A minimal package containing simplified Postgres connection functionality\n      \n  \n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/Consumer Age by Category/index.html",
+    "href": "posts/Consumer Age by Category/index.html",
+    "title": "Consumer Age by Category",
+    "section": "",
+    "text": "Based on the distributions below, we can see that there is nearly a 20 year age gap between the median age of the group that most often purchases Vapes or Extracts, then that of Topicals. Furthermore, the distributions begin highly skewed to the left around the legal age of consumption (21 y/o) but have a tendancy to normalize around the average age of the group as you go down."
+  },
+  {
+    "objectID": "posts/Consumer Age by Category/index.html#consumer-age-by-category",
+    "href": "posts/Consumer Age by Category/index.html#consumer-age-by-category",
+    "title": "Consumer Age by Category",
+    "section": "",
+    "text": "Based on the distributions below, we can see that there is nearly a 20 year age gap between the median age of the group that most often purchases Vapes or Extracts, then that of Topicals. Furthermore, the distributions begin highly skewed to the left around the legal age of consumption (21 y/o) but have a tendancy to normalize around the average age of the group as you go down."
+  },
+  {
+    "objectID": "posts/Consumer Age by Category/index.html#section",
+    "href": "posts/Consumer Age by Category/index.html#section",
+    "title": "Consumer Age by Category",
+    "section": "",
+    "text": "Some hypotheses around this notable change and shift in distribution could center around the accessibility and potential market growth of product categories. For instance, it’s worth noting that topicals seem to be accessible to a wider age group and therefore the potential for market growth for topicals products seems to be higher then that of Vapes or Extracts. Note this is in reference to growth and not size. Market size for vapes or extracts remains markedly high."
+  },
+  {
+    "objectID": "posts/Customer Segment Exploration/index.html",
+    "href": "posts/Customer Segment Exploration/index.html",
+    "title": "Exploring Customer Segments",
+    "section": "",
+    "text": "Note, this post uses the terms Customer, Consumer, and Buyers interchangably to refer to the end customer of cannabis products purchased from our retail clients."
+  },
+  {
+    "objectID": "posts/Customer Segment Exploration/index.html#category-exclusive-consumers",
+    "href": "posts/Customer Segment Exploration/index.html#category-exclusive-consumers",
+    "title": "Exploring Customer Segments",
+    "section": "Category Exclusive Consumers",
+    "text": "Category Exclusive Consumers\nI’ve identified 9 product categories that are used to classify customerrs based on their preference for each category. All customers classified here are regular customers. First, let’s review the 9 product categories:\n\nVapes\n\nCartridges, Pods, Disposables\n\nExtracts\n\nDab, Wax, Shatter, Budder, Live Resin, Syringe products, etc.\n\nTinctures\n\nTinctures products\n\nTopicals\n\nOintment, lotion, balm, salve, bath bombs, bath salts, etc.\n\nTablets\n\nTablets, capsules, pills, excludes lozanges and mints\n\nDrinks\n\nBeverage products only, includes syrups and drink mixers\n\nEdibles\n\nCandy, gummies, sweets, baked goods, lozanges, mints, etc.\n\nFlower\n\nPrepackaged, small batches, various quantities, etc.\n\nPrerolls\n\nPre-rolled joints, blunts, infused & non-infused\n\n\nFor every category above, there’s a segment of customers that mostly prefers that category. These customers are called category exclusive consumers. A category exclusive customer is someone who has spent at least 75% of their total dollars towards products of a particular category over the course of many regular orders over a period of time."
+  },
+  {
+    "objectID": "posts/Customer Segment Exploration/index.html#discount-sensitive-consumers",
+    "href": "posts/Customer Segment Exploration/index.html#discount-sensitive-consumers",
+    "title": "Exploring Customer Segments",
+    "section": "Discount Sensitive Consumers",
+    "text": "Discount Sensitive Consumers\nDiscount senstive consumers are repeat customers whose average discount rate is above the majority of the rest of the customers, and furthermore, their discount rate impacts their tendancy towards a higher sales velocity (they come back more often as discount rates increase, and less frequently as they decline). Its important to note that contrary to intuition, not all customers respond to discount rates just like not all products are discount elastic (lower price doesn’t always drive more demand)."
+  },
+  {
+    "objectID": "posts/Customer Segment Exploration/index.html#most-and-least-frequent-buyers",
+    "href": "posts/Customer Segment Exploration/index.html#most-and-least-frequent-buyers",
+    "title": "Exploring Customer Segments",
+    "section": "Most and Least Frequent Buyers",
+    "text": "Most and Least Frequent Buyers\nFrequency has been identified as a major trait describing customer behavior. The flags Most Frequent and Least Frequent refer to repeat customers whose days between orders falls in the smallest group (less days between these customer’s orders) and largest group (more days between their orders). Frequency often impacts factors such as (1) how large or small the order size will be (2) how often will the consumer purchase a product they’ve previously never purchased."
+  },
+  {
+    "objectID": "posts/Customer Segment Exploration/index.html#high-vs-low-dollar-spenders",
+    "href": "posts/Customer Segment Exploration/index.html#high-vs-low-dollar-spenders",
+    "title": "Exploring Customer Segments",
+    "section": "High vs Low Dollar Spenders",
+    "text": "High vs Low Dollar Spenders\nThese two segments are pretty straightforward. High dollar spenders are customers that have a historical order size that falls in the highest quartile group; while low dollar spenders have an average historical order size falling in the lowest quartile group. In the case of Verano, we can see from the table below that high spenders have an average order total of $195 (vs $44 for Low spenders)."
+  },
+  {
+    "objectID": "posts/Customer Segment Exploration/index.html#segment-comparisons-and-other-insights",
+    "href": "posts/Customer Segment Exploration/index.html#segment-comparisons-and-other-insights",
+    "title": "Exploring Customer Segments",
+    "section": "Segment Comparisons and Other Insights",
+    "text": "Segment Comparisons and Other Insights\nHere are some takeaway insights from the summary statistics table above:\n\nThe segment with the lowest average age (35) is customers that prefer extracts. The groups with the highest average age is Topicals (59), Tinctures (58), and Tablets (53).\nCustomers that prefer prerolls have a comparitively low average order total ($52), which is only slightly greater than the group of customers that are classified as Low Spenders ($44)\nBesides the High Spender group, the segments with the highest average order total are those that prefer Extracts ($104) and those that prefer Vapes ($103)\nCustomers that order most frequently have a lower average order total ($89) vs customers that order least frequently ($111)\nHigh spenders tend to be older than low spenders (44 vs 38)"
+  },
+  {
+    "objectID": "posts/Impact of Product Stockouts/index.html",
+    "href": "posts/Impact of Product Stockouts/index.html",
+    "title": "Impact of Product Stockouts",
+    "section": "",
+    "text": "Demo App\n\n\n\nThis post has an associated public app that is available here. Simply login with google to access."
+  },
+  {
+    "objectID": "posts/Impact of Product Stockouts/index.html#objective",
+    "href": "posts/Impact of Product Stockouts/index.html#objective",
+    "title": "Impact of Product Stockouts",
+    "section": "Objective",
+    "text": "Objective\nThis case study uses a key flower product for an anonymized retailer and analyzes the sales driven by this product over a 90-day period in order to estimate1 what sales would be if not for product stockouts. Expected total revenue generated by the product through each day of the period is modeled and shown in Figure 1.\n\n\n\n\n\n\nKey Takeaways\n\n\n\n\nFor the product selected in this case study, an important Flower menu item that has regular unit sales and drives the majority share of the order dollars when purchased2, total sales revenue at the end of 90 days is 60% of what it could be, if not for product stockouts (Figure 3).\nIn a scenario in which supply issues do not lead to stockouts, this translates to additional revenue of $6,665 for this product after 90 days of sales (Figure 3). Similarly, the impact after 45 days with no stockouts for this product is increased revenues of $4,607 (shown in Figure 2).\nThe modeling approach used here suggests that any actions taken to reduce the likelihood of product stockouts for important revenue-driving products would yield immediate benefit in the form of increased sales for these products on a daily basis (Figure 1)"
+  },
+  {
+    "objectID": "posts/Impact of Product Stockouts/index.html#definitions",
+    "href": "posts/Impact of Product Stockouts/index.html#definitions",
+    "title": "Impact of Product Stockouts",
+    "section": "Definitions",
+    "text": "Definitions\nTo get started, let’s align on a couple definitions…\n\nProduct Stockout\n\nA stockout occurs when customer orders for a product exceed the amount of inventory kept on hand. This situation arises when demand is higher than expected and the amount of normal inventory and safety stock is too low to fill all orders.3\n\nPrimary Product\n\nI define a primary product as a product that when purchased, drives the majority of the total order dollars. On average, if a product drives over 50% of the total ticket sales, this product would be classified as a primary product. In contrast, a secondary product typically is thought of as an ‘order add-on’ and drives a smaller share of the customers’ total spend per order."
+  },
+  {
+    "objectID": "posts/Impact of Product Stockouts/index.html#results",
+    "href": "posts/Impact of Product Stockouts/index.html#results",
+    "title": "Impact of Product Stockouts",
+    "section": "Results",
+    "text": "Results\nFigure 1 shows the actual cumulative sales for this primary product over the course of a 90-day sales period as well as the expected (or predicted) cumulative sales in a world in which there are no stockouts occurring during the period. The difference between the lines on the chart (the area denoted in green) is the sales impact of stockouts at particular points in time.\n\n\n\nFigure 1: Sales But For Stockouts\n\n\n\n\n\n\n\n\nUnderstanding the Plot\n\n\n\nSince we are using 90 days for our sales period, the 50% mark on the x-axis corresponds to 45 days. At 45 days, the difference between the actual sales (with stockouts) and the expected sales (without stockouts) is the total sales generated through 45 days but-for stockouts. See Figures 2 and 3 for additional clarity.\n\n\n\nSales But For Stockouts\nThe annotated plots below provides additional guidance for reading and understanding the results. At any given time during the period, to see the sales impact from stockouts through that moment in time, look at the difference between the prediction and the actual sales.\n\nTo illustrate this, we can see that when we are 50% of the way through the period (i.e. day 45 of a 90 day period), the difference at that moment in the estimate and the actual sales is highlighted in the plot below.\n\n\n\nFigure 2: Impact after 45 days\n\n\n\nSimilarly, we can see the same insight at day 90 (x = 100%) below. The difference between estimated revenue and actual revenue after 90 days of product sales is called out below.\n\n\n\nFigure 3: Impact after 90 days\n\n\n\n\n\n\n\n\nCase Study Caveats\n\n\n\n\nThe product identified for this case study is a regular menu item, one that is a primary product, and has no recent upward or downward trends in sales for the 90 day study period.\nBy selecting a primary product with neutral sales trend (flat, no increase or decline in sales over time)4, but specifically one that has stable daily unit sales (uniformly distributed throughout the period), we can best illustrate the methodology we use to estimate the dollar impact of stockouts in the period.\nIn this case study, stockouts are implicitly identified using days with no unit sales as the proxy for a stockout occurring. This is justifiable as we specifically use a product with regular daily unit sales throughout the period.\nIn generalizing this methodology or extending this work, we would utilize historical daily inventory snapshots to explicitly identify whether there is a product stockout for a particular sales day.\nIt’s important to highlight the fact that the expected gains in revenue are at the product sales level. In practice, when a product experiences stockouts, oftentimes retailers have available substitutes to limit any negative impacts to the Retailers top-line revenues. However, for a select group of products with high customer loyalty, not all the sales can be recovered and best efforts need to be made in order to mitigate stockout events."
+  },
+  {
+    "objectID": "posts/Impact of Product Stockouts/index.html#footnotes",
+    "href": "posts/Impact of Product Stockouts/index.html#footnotes",
+    "title": "Impact of Product Stockouts",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThis estimate requires a simple modeling approach that utilizes a running average of sales velocity for this product to approximate the sales we’d expect on any given day there was a stockout↩︎\nOtherwise known as a ‘Primary Product’. See definitions in section Definitions for more↩︎\nIn Cannabis, stockouts are typically rooted in issues on the supplier side, in contrast to other retail industries where they are more often caused by unexpected and unforeseen rises in demand↩︎\nWhen sales are trending in either direction, we would account for such trends by adjusting the reorder quantity required from the supplier to meet the anticipated trends in sales velocity. In doing so, the impact of a stockout when expressed as a percentage of total dollars lost, would remain the same with or without trends↩︎"
+  },
+  {
+    "objectID": "posts/Discount Demand Modeling/index.html",
+    "href": "posts/Discount Demand Modeling/index.html",
+    "title": "Discount Demand Modeling",
+    "section": "",
+    "text": "Here are some basic facts about Discount Elasticity:\nMost products in cannabis are elastic to a certain level of discounting, but inelastic after that point. This discount level should be the maximum level of discounting offered by retailers.\nThis work demonstrates the ability to determine by Brand and Category, whether products are price elastic (i.e. discounts drive velocity significantly) or whether discounts have limited impact on sales velocity1 (i.e. discounts decrease profits without significant impact on velocity)."
+  },
+  {
+    "objectID": "posts/Discount Demand Modeling/index.html#footnotes",
+    "href": "posts/Discount Demand Modeling/index.html#footnotes",
+    "title": "Discount Demand Modeling",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nTypically defined as units sold per time period (day, week, etc.)↩︎\nThe data used here are weekly sales transactions beginning 2020 and ending 2023.↩︎"
+  },
+  {
+    "objectID": "posts/Assessing Performance with Surgical Learning Curves/index.html",
+    "href": "posts/Assessing Performance with Surgical Learning Curves/index.html",
+    "title": "Assessing Performance with Surgical Learning Curves",
+    "section": "",
+    "text": "Robotic Surgical learning curves can be modeled using data generated during each procedure by grouping Surgeon’s into cohorts by Surgical Specialty, and comparing the groups average procedure duration across cases. These models have many potential applications and can be highly useful in providing benchmarks used to assess surgical efficiency and proficiency. Furthermore, these models can be utilized to drive internal business decisions focused around surgeon training programs and products. Finally, learning curves can provide a basis to quantify the impact that existing training can have on surgical expertise and learning."
+  },
+  {
+    "objectID": "posts/Assessing Performance with Surgical Learning Curves/index.html#footnotes",
+    "href": "posts/Assessing Performance with Surgical Learning Curves/index.html#footnotes",
+    "title": "Assessing Performance with Surgical Learning Curves",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nRate of learning can be described as: the decrease in an outcome being measured, over each subsequent case, time, or other measure of experience↩︎"
+  },
+  {
+    "objectID": "posts/Optimal Price of Kiva Products/index.html",
+    "href": "posts/Optimal Price of Kiva Products/index.html",
+    "title": "Optimal Price of Kiva Products",
+    "section": "",
+    "text": "After modeling for the optimal price, one that maximizes demand level, and after normalizing demand across various sized organizations, I find that Kiva Products on average are about 8% overpriced when comparing the average historical price items have been sold across all time, vs. the price that successful retailers are selling these products to acheive the maximum product sell-through possible at their retail locations.\nTo summarize the findings by product:\n\nTo achieve maximum demand for Camino Gummies, products are selling at an average discount of about 21% with a final out the door price of roughly $18.\nTo achieve maximum demand for Kiva Chocolate Bars, products are selling at an average discount of about 18% with a final out the door price of roughly $20.5.\nTo achieve maximum demand for Kiva Terra Bites, products are selling at an average discount of about 17% with a final out the door price of roughly $21.\n\nFor a breakdown of the methodology and technical analysis results, see below."
+  },
+  {
+    "objectID": "posts/Optimal Price of Kiva Products/index.html#note-about-the-model",
+    "href": "posts/Optimal Price of Kiva Products/index.html#note-about-the-model",
+    "title": "Optimal Price of Kiva Products",
+    "section": "Note about the Model:",
+    "text": "Note about the Model:\nDemand is expressed as a function \\(Demand = F(P)\\); where \\(F(P)\\) (being a function of Price) is estimated with the following equation using a Generalized Additive Model (GAM): \\(F(P) = B_2(ln(P) * ln(P + 1)) + B_1\\). This Model gives us the expected shape of a price/demand relationship and the data supports such a fit as can be seen in the results section below.\n\nFor this model, the term \\(B_2\\) can be considered the price elasticity of demand depending on the product type (Chocolate Bar, Camino Gummy, or Terra Bites) and \\(B_1\\) is considered the minimum level of demand for such a product. The accuracy metrics for this model are the model \\(R^2\\), the model \\(p-value\\) as well as the model \\(F-statistic\\). The accuracy for this model ranges from 80% (Kiva Terra Bites) to 90% (Kiva Chocolate Bars) while the confidence interval around the model’s fit is 95%."
+  },
+  {
+    "objectID": "posts/Optimal Price of Kiva Products/index.html#kiva-camino-gummies",
+    "href": "posts/Optimal Price of Kiva Products/index.html#kiva-camino-gummies",
+    "title": "Optimal Price of Kiva Products",
+    "section": "Kiva Camino Gummies",
+    "text": "Kiva Camino Gummies\n\nIn summary, to achieve maximum demand for Camino Gummies, products are selling at an average discount of about 21% with a final out the door average price of roughly $18.\n\nThe following plot describes the model being fit on normalized demand data for all orgs. The x-axis describes the percentage demand which is simply the normalized product sell-through velocity, while the y-axis is the average unit prices. This plot shows the correlation between changes in price and changes in demand as observed in the data.\n\n\n\nOptimal Pricing of Kiva Camino Gummies\n\n\nThe plot below summarizes the average discount level offered seen at various levels of demand while also highlighting the average price of units sold in each group.\n\n\n\nDiscount Pricing and Demand Summary for Kiva Camino Gummies"
+  },
+  {
+    "objectID": "posts/Optimal Price of Kiva Products/index.html#kiva-chocolate-bars-100mg",
+    "href": "posts/Optimal Price of Kiva Products/index.html#kiva-chocolate-bars-100mg",
+    "title": "Optimal Price of Kiva Products",
+    "section": "Kiva Chocolate Bars (100mg)",
+    "text": "Kiva Chocolate Bars (100mg)\n\nIn summary, to achieve maximum demand for Kiva Chocolate Bars, products are selling at an average discount of about 18% with a final out the door average price of roughly $21.\n\n\n\n\nOptimal Pricing of Kiva Chocolate Bars\n\n\n\n\n\nDiscount Demand Summary for Kiva Chocolate Bars"
+  },
+  {
+    "objectID": "posts/Optimal Price of Kiva Products/index.html#kiva-terra-bites",
+    "href": "posts/Optimal Price of Kiva Products/index.html#kiva-terra-bites",
+    "title": "Optimal Price of Kiva Products",
+    "section": "Kiva Terra Bites",
+    "text": "Kiva Terra Bites\n\nIn summary, to achieve maximum demand for Kiva Terra Bites, products are selling at an average discount of about 17% with a final out the door average price of roughly $20.5.\n\n\n\n\nOptimal Pricing of Kiva Terra Bites"
+  },
+  {
+    "objectID": "posts/Influencing the Learning Curve in Robotic Assisted Surgery/index.html",
+    "href": "posts/Influencing the Learning Curve in Robotic Assisted Surgery/index.html",
+    "title": "Influencing the Learning Curve in Robotic Assisted Surgery",
+    "section": "",
+    "text": "Note\n\n\n\nThis builds from previous posts about the Surgical Learning Curve in Robotic Assisted Surgery. For an intro on the background, data, and various definitions, see this post. Additionally, see here for my first post describing the work of modeling these learning curves as well as important applications of these models in quantifying surgical efficiency and surgeon proficiency."
+  },
+  {
+    "objectID": "posts/Influencing the Learning Curve in Robotic Assisted Surgery/index.html#influencing-the-curve",
+    "href": "posts/Influencing the Learning Curve in Robotic Assisted Surgery/index.html#influencing-the-curve",
+    "title": "Influencing the Learning Curve in Robotic Assisted Surgery",
+    "section": "Influencing the Curve",
+    "text": "Influencing the Curve\n\nSurgeons who perform procedures more often outperform surgeons that complete the same number of procedures less often (more days between cases)\n\nAnalysis of the learning curve model for various cohorts of Surgeons can help identify specific drivers of increased performance. For example, the following exploratory visualization (figure 1) provides support to the hypothesis that Surgeons who perform procedures more often outperform surgeons that complete the same number of procedures less often (more days between cases). The performance indicator in this case is overall procedure duration. In figure 1 below, the frequency difference between groups is identified empirically using the top and bottom 25th percentile in the total number of days between cases.1 This observation is seen across all 6 procedure types indicated in the plot below.\n\n\n\nFigure 1 - Comparison of Surgeon Groups\n\n\nFigure 1 above shows the difference in Average Procedure Duration across groups of surgeons that were classified as performing 100 total procedures more frequently (the top 70th percentile in time taken to perform 100 total cases) vs less frequently (bottom 30th percentile). By controlling for total cases performed across groups, we can capture the true impact that frequency has on the learning curve outcome measure used (procedure duration)."
+  },
+  {
+    "objectID": "posts/Influencing the Learning Curve in Robotic Assisted Surgery/index.html#actionable-learning-indicators-levers-of-learning",
+    "href": "posts/Influencing the Learning Curve in Robotic Assisted Surgery/index.html#actionable-learning-indicators-levers-of-learning",
+    "title": "Influencing the Learning Curve in Robotic Assisted Surgery",
+    "section": "Actionable Learning Indicators (Levers of Learning)",
+    "text": "Actionable Learning Indicators (Levers of Learning)\nThe following variables have been studied and demonstrated to have a significant impact on the learning curve. These are referred to as Levers of Learning. \n\nCase Mix: captures effects attributed to general complexity, degree of specialization, and transferred background learning. Case Mix best accounts for procedure agnostic learning that can be transferred across a series of different cases that a given surgeon performs\nCase Frequency:captures the effect on expected efficiency that is largely attributed to the time between subsequent cases. Empirical observations of robotic surgery data suggest that a large portion of the gain in efficiency that comes from Surgeon learning is the degree of exposure a surgeon has within a fixed period of time\nProcedure Velocity: is a derivation of Case Frequency; however, the interpretation of Velocity is not based on exposure within a fixed period of time. Rather, Velocity is expressed as a point-in-time measure of the degree of case exposure, for all historical cases through most recent observation.2\n\n\nBenchmarking with Baseline Learning Curve\n\nThe result demonstrates that if surgeons perform cases more frequently as they continue gaining experience, then they actually shift to a more desirable learning curve.\n\nThe following illustrates a baseline learning curve modeled using Robotic Surgery data across a number of procedure types. Furthermore, we can adjust model parameters to understand its impact on the learning trajectory. The top most learning curve in figure 2 is the baseline expected trajectory of procedure duration through a surgeons first 100 cases. From there, we show new learning curves assuming greater and greater case frequency scenarios. The result demonstrates that if surgeons perform cases more frequently as they continue gaining experience, then they actually shift to a more desirable learning curve.\n\n\n\nFigure 2: Shifting the Learning Curve"
+  },
+  {
+    "objectID": "posts/Influencing the Learning Curve in Robotic Assisted Surgery/index.html#footnotes",
+    "href": "posts/Influencing the Learning Curve in Robotic Assisted Surgery/index.html#footnotes",
+    "title": "Influencing the Learning Curve in Robotic Assisted Surgery",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nSurgeon in the ‘less often’ group have an average count of days between cases that falls in the top 25th percentile (more days).↩︎\nMore simply, Velocity is calculated as the cumulative average procedures per-day for a surgeon and expressed at a specific case N, while Frequency is a simple average associated with a period (e.g. between cases 10 and 20).↩︎"
+  },
+  {
+    "objectID": "posts/The Actual Learning Curve of a Real Surgeon/index.html",
+    "href": "posts/The Actual Learning Curve of a Real Surgeon/index.html",
+    "title": "The Actual Learning Curve of a Real Surgeon",
+    "section": "",
+    "text": "I tracked the surgical procedures of a real-life novice surgeon in their first year of performing prostatectomy cases and captured their total procedure duration for each case. I then fit a log-linear regression model to understand whether a learning curve can identified with high confidence; Also included is the Surgeon’s rate at which they complete cases (average procedures completed per day) over the same period.\n\n\n\n\n\n\nSummary\n\n\n\nFigure 1 below demonstrates a clear learning curve in procedure duration for prostatectomy cases over the course of a novice surgeon’s first year (where they completed around 80 total cases). As experience increases, the efficiency gained from ‘learning’ results in each case taking an average of 25% less time to complete from start to finish, and furthermore, this surgeon is able to perform 3X more cases per day on average.\n\n\n\n\n\nFigure 1 - Learning Curve in Procedure Duration for a Novice Prostatectomy Surgeon"
+  },
+  {
+    "objectID": "posts/The Actual Learning Curve of a Real Surgeon/index.html#background",
+    "href": "posts/The Actual Learning Curve of a Real Surgeon/index.html#background",
+    "title": "The Actual Learning Curve of a Real Surgeon",
+    "section": "",
+    "text": "I tracked the surgical procedures of a real-life novice surgeon in their first year of performing prostatectomy cases and captured their total procedure duration for each case. I then fit a log-linear regression model to understand whether a learning curve can identified with high confidence; Also included is the Surgeon’s rate at which they complete cases (average procedures completed per day) over the same period.\n\n\n\n\n\n\nSummary\n\n\n\nFigure 1 below demonstrates a clear learning curve in procedure duration for prostatectomy cases over the course of a novice surgeon’s first year (where they completed around 80 total cases). As experience increases, the efficiency gained from ‘learning’ results in each case taking an average of 25% less time to complete from start to finish, and furthermore, this surgeon is able to perform 3X more cases per day on average.\n\n\n\n\n\nFigure 1 - Learning Curve in Procedure Duration for a Novice Prostatectomy Surgeon"
+  },
+  {
+    "objectID": "posts/The Actual Learning Curve of a Real Surgeon/index.html#plot-insights",
+    "href": "posts/The Actual Learning Curve of a Real Surgeon/index.html#plot-insights",
+    "title": "The Actual Learning Curve of a Real Surgeon",
+    "section": "Plot Insights",
+    "text": "Plot Insights\nAs this surgeon gains experience, they take overall less time to finish the surgery, and their observed procedure durations have less variability1, becoming more and more predictible:\n\nJanuary 2020: Surgeon has limited prostetectomy case experience, and Surgeon’s procedures take between 100 amd 160 minutes to complete.\nJanuary 2021: Surgeon has completed around 80 prior cases and Surgeon’s procedures take between 83 and 95 minutes to complete.\n\nAdditionally as surgeon progresses through their first year of procedures, they are able to complete cases at an increasing rate:\n\nJanuary 2020: Surgeon has limited/no prostetectomy case experience, and surgeon performs cases at an average rate of 1 case every 6 days\nJanuary 2021: Surgeon has completed around 80 prior cases, and surgeon performs cases at an average rate of 1 case every 2 days"
+  },
+  {
+    "objectID": "posts/The Actual Learning Curve of a Real Surgeon/index.html#footnotes",
+    "href": "posts/The Actual Learning Curve of a Real Surgeon/index.html#footnotes",
+    "title": "The Actual Learning Curve of a Real Surgeon",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThis is consistent with a surgery like prostetectomy where case complexity remains relatively consistent across patients.↩︎"
+  }
+]

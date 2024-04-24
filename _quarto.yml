@@ -1,0 +1,32 @@
+project:
+  type: website
+
+website:
+  title: "Blog"
+  site-url: "rdata.blog"
+  favicon: images/favicon_io/favicon.ico
+  description: "All Things Data Science and R"
+  navbar:
+    logo: images/ninja-quant-logo.png
+    left:
+      - href: ./pages/about/index.qmd
+        text: About
+      - href: ./pages/analytics/index.qmd
+        text: Analytics
+    right:
+      - icon: github
+        href: https://github.com/r-data-science
+      - icon: linkedin
+        href: https://www.linkedin.com/in/bobbyfatemi
+      - icon: rss
+        href: index.xml
+      - href: https://us21.list-manage.com/contact-form?u=9a91f0c5718cbb77d8b252807&form_id=0d3c34c402b50424ea117b80c34a2aa4
+        text: Contact
+
+
+format:
+  html:
+    theme: journal
+
+editor: visual
+

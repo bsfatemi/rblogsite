@@ -1,0 +1,125 @@
+---
+title: "Impact of Budtender Rewards"
+author: "Bobby Fatemi"
+date: "2023-06-02"
+categories: [zoltrain, insights]
+description: "This post explores whether budtender incentives to complete training courses will translate to a sales lift for brands that offer such rewards."
+image: "images/highway - rewards redeemed by month.png"
+draft: true
+---
+
+Using Highway Cannabis as our retailer case study, and specifically,
+using sales data from their Marina Del Rey location, I will analyze
+their rewards data and identify a correlation between brands that have
+rewarded their budtenders, and trends in their consumer sales
+transactions for those brands.
+
+# Impact of Rewards on Brand Sales
+
+In total, at Highway Cannabis (Marina Del Rey) there are nine brands
+that offered rewards during the later half of 2022; however, of those 9
+brands, there were four that offered a signficant number of rewards
+concentrated in the months of August, September, and October of 2022.
+This is shown in the chart below.
+
+![](images/highway%20-%20rewards%20redeemed%20by%20month.png)
+
+Furthermore, the four brands identified in the chart above have products
+that fall into three categories (edibles, vapes, and flower). For the
+next step in this analysis, I will analyze the sales data for two groups
+(four brands offering rewards vs all other brands that offered no
+rewards), across two time periods (the period in which rewards were
+redeemed, and a period of the same length immediately prior where no
+rewards were offered by any brand), and three product category segments.
+
+## Objective
+
+The objective is very simple, I'd like to understand whether there is a
+meaningful difference in total sales for brands that were offering
+rewards during a defined time period, and all other brands during the
+same period, as well as a comparison of both across a prior time period
+where no rewards were offered.
+
+## Methodology
+
+First, I split sales transactions into the following time periods:
+
+1.  Earning Rewards time period of 60 days (8/22/2022 - 10/22/2022).
+    This corresponds with the rewards data shown in the graph above
+    where a large number of rewards were being earned and redeemed by
+    budtenders for the four brands in focus.
+
+2.  Pre-Rewards time period of 60 days (6/21/2022 - 8/21/2022). This
+    corresponds to a period where 0 rewards were offered and redeemed by
+    budtenders and spans the same number of days as the Earning Rewards
+    period that immediately follows.
+
+Next, I group sales data and analyze sales for products that fall into
+the following categories: Edibles, Vapes, and Flower products.
+
+Lastly, I analyze the relevant data for each of the four brands as well
+as a larger group of all other brands that I'll categorize as one big
+control group (brands that offered no rewards across either time
+period).
+
+## Results
+
+In summary, when comparing brands that **offered rewards** vs. brands
+that **offered no rewards**, across two consequtive 60 day periods
+(no-rewards vs earning rewards time periods), I found the following:
+
+> *Brands offering rewards saw an **average increase in total sales of
+> 67%** in the period in which rewards were being redeemed by budtenders
+> (Figure 1), while brands that offered no rewards **saw an average
+> percentage decline of 8.5%** in total sales (Figure 3) across the same
+> time periods. Furthermore, we see that brands offering rewards also
+> benefited in sharp increases in the percentage of total sales across
+> both of these time periods (Figure 2).*
+
+As a reminder, these are the definitions for the time periods being
+shown in Figures 1, 2, and 3:
+
+Earning Rewards Period
+
+:   The period in which rewards were offered and continued to be
+    redeemed (8/22/2022 - 10/22/2022)
+
+Pre-Rewards Period
+
+:   The period immediately before rewards began being redeemed by
+    budtenders (6/21/2022 - 8/21/2022
+
+![Figure 1](images/sales_in_period_reward_brands.png)
+
+![Figure 2](images/pct_sales_in_period_reward_brands.png)
+
+![Figure 3](images/sales_in_period_no-reward_brands.png)
+
+## Appendix
+
+Here is a summary of the results shown above in Figures 1 and 3:
+
++------------+------------+------------+------------+------------+
+| Category   | brand      | P          | Earning    | Percent    |
+|            |            | re-Rewards | Rewards    | Change     |
+|            |            |            |            |            |
+|            |            | (Total     | (Total     |            |
+|            |            | Sales)     | Sales)     |            |
++:===========+:===========+:===========+:===========+:===========+
+| EDIBLES    | KANHA      | \$4,100    | \$6,639    | +61.9%     |
++------------+------------+------------+------------+------------+
+| EDIBLES    | ALL OTHERS | \$66,249   | \$52,850   | -20.2%     |
++------------+------------+------------+------------+------------+
+| FLOWER     | CHEMISTRY  | \$641      | \$1,835    | +186.2%    |
++------------+------------+------------+------------+------------+
+| FLOWER     | ALL OTHERS | \$142,185  | \$136,624  | -3.9%      |
++------------+------------+------------+------------+------------+
+| VAPES      | ABSOLUTE   | \$4,162    | \$6,327    | +52.0%     |
+|            | EXTRACTS   |            |            |            |
++------------+------------+------------+------------+------------+
+| VAPES      | CARE BY    | \$751      | \$1,312    | +74.7%     |
+|            | DESIGN     |            |            |            |
++------------+------------+------------+------------+------------+
+| VAPES      | ALL OTHERS | \$94,351   | \$87,738   | -7.0%      |
++------------+------------+------------+------------+------------+
+

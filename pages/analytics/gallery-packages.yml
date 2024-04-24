@@ -1,0 +1,31 @@
+
+- category: R Packages
+  description: |
+    My publicly available R packages.
+  tiles:
+    - title: RestockML
+      description: R package containing app Product Restock Model
+      href: https://github.com/r-data-science/RestockML?tab=readme-ov-file#RestockML
+      code: https://github.com/r-data-science/RestockML
+      thumbnail: images/hex-rpkg-RestockML.png
+    - title: rblogapps
+      description: R package containing a collection of blog-related apps
+      href: https://github.com/r-data-science/rblogapps?tab=readme-ov-file#rblogapps
+      code: https://github.com/r-data-science/rblogapps
+      thumbnail: images/hex-rpkg-rblogapps.png
+    - title: apptemplate1
+      description: Shiny app R package template with code-coverage and app tests using shinytest2
+      href: https://github.com/r-data-science/apptemplate1?tab=readme-ov-file#apptemplate1
+      code: https://github.com/r-data-science/apptemplate1
+      thumbnail: images/hex-rpkg-apptemplate1.png
+    - title: rdstools
+      description: A minimal package containing commonly used development and logging tools
+      href: https://github.com/r-data-science/rdstools?tab=readme-ov-file#rdstools
+      code: https://github.com/r-data-science/rdstools
+      thumbnail: images/hex-rpkg-rdstools.png
+    - title: rpgconn
+      description: A minimal package containing simplified Postgres connection functionality
+      href: https://github.com/r-data-science/rpgconn?tab=readme-ov-file#rpgconn
+      code: https://github.com/r-data-science/rpgconn
+      thumbnail: images/hex-rpkg-rpgconn.png
+

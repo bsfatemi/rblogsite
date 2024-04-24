@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Bobby Fatemi">
+<meta name="dcterms.date" content="2023-05-31">
+<meta name="description" content="This post explores customer segmentation in retail Cannabis. Here we defines these segments as well as nine product categories that play an important role in classifying customers by preference.">
+
+<title>Blog - Exploring Customer Segments</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon_io/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/ninja-quant-logo.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Blog</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/about/index.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pages/analytics/index.html" rel="" target="">
+ <span class="menu-text">Analytics</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/r-data-science" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/bobbyfatemi" rel="" target=""><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml" rel="" target=""><i class="bi bi-rss" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://us21.list-manage.com/contact-form?u=9a91f0c5718cbb77d8b252807&amp;form_id=0d3c34c402b50424ea117b80c34a2aa4" rel="" target="">
+ <span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Exploring Customer Segments</h1>
+                  <div>
+        <div class="description">
+          This post explores customer segmentation in retail Cannabis. Here we defines these segments as well as nine product categories that play an important role in classifying customers by preference.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">cannabis</div>
+                <div class="quarto-category">exploratory</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Bobby Fatemi </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 31, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p><code>Note, this post uses the terms Customer, Consumer, and Buyers interchangably to refer to the end customer of cannabis products purchased from our retail clients.</code></p>
+<section id="customer-segment-definitions" class="level1">
+<h1>Customer Segment Definitions</h1>
+<p>The set of new segments centers around customer preferences for particular product categories, as well as purchase habits and buying behavior. First, let’s discuss product preference segments</p>
+<section id="category-exclusive-consumers" class="level2">
+<h2 class="anchored" data-anchor-id="category-exclusive-consumers">Category Exclusive Consumers</h2>
+<p>I’ve identified 9 product categories that are used to classify customerrs based on their preference for each category. All customers classified here are regular customers. First, let’s review the 9 product categories:</p>
+<dl>
+<dt>Vapes</dt>
+<dd>
+<p>Cartridges, Pods, Disposables</p>
+</dd>
+<dt>Extracts</dt>
+<dd>
+<p>Dab, Wax, Shatter, Budder, Live Resin, Syringe products, etc.</p>
+</dd>
+<dt>Tinctures</dt>
+<dd>
+<p>Tinctures products</p>
+</dd>
+<dt>Topicals</dt>
+<dd>
+<p>Ointment, lotion, balm, salve, bath bombs, bath salts, etc.</p>
+</dd>
+<dt><strong>Tablets</strong></dt>
+<dd>
+<p>Tablets, capsules, pills, excludes lozanges and mints</p>
+</dd>
+<dt>Drinks</dt>
+<dd>
+<p>Beverage products only, includes syrups and drink mixers</p>
+</dd>
+<dt>Edibles</dt>
+<dd>
+<p>Candy, gummies, sweets, baked goods, lozanges, mints, etc.</p>
+</dd>
+<dt>Flower</dt>
+<dd>
+<p>Prepackaged, small batches, various quantities, etc.</p>
+</dd>
+<dt>Prerolls</dt>
+<dd>
+<p>Pre-rolled joints, blunts, infused &amp; non-infused</p>
+</dd>
+</dl>
+<p>For every category above, there’s a segment of customers that mostly prefers that category. These customers are called <strong>category exclusive consumers.</strong> A category exclusive customer is someone who has spent at least 75% of their total dollars towards products of a particular category over the course of many regular orders over a period of time.</p>
+</section>
+<section id="discount-sensitive-consumers" class="level2">
+<h2 class="anchored" data-anchor-id="discount-sensitive-consumers">Discount Sensitive Consumers</h2>
+<p>Discount senstive consumers are repeat customers whose average discount rate is above the majority of the rest of the customers, and furthermore, their discount rate impacts their tendancy towards a higher sales velocity (they come back more often as discount rates increase, and less frequently as they decline). Its important to note that contrary to intuition, not all customers respond to discount rates just like not all products are discount elastic (lower price doesn’t always drive more demand).</p>
+</section>
+<section id="most-and-least-frequent-buyers" class="level2">
+<h2 class="anchored" data-anchor-id="most-and-least-frequent-buyers">Most and Least Frequent Buyers</h2>
+<p>Frequency has been identified as a major trait describing customer behavior. The flags <strong>Most Frequent</strong> and <strong>Least Frequent</strong> refer to repeat customers whose <em>days between orders</em> falls in the smallest group (less days between these customer’s orders) and largest group (more days between their orders). Frequency often impacts factors such as (1) how large or small the order size will be (2) how often will the consumer purchase a product they’ve previously never purchased.</p>
+</section>
+<section id="high-vs-low-dollar-spenders" class="level2">
+<h2 class="anchored" data-anchor-id="high-vs-low-dollar-spenders">High vs Low Dollar Spenders</h2>
+<p>These two segments are pretty straightforward. High dollar spenders are customers that have a historical order size that falls in the highest quartile group; while low dollar spenders have an average historical order size falling in the lowest quartile group. In the case of Verano, we can see from the table below that high spenders have an average order total of $195 (vs $44 for Low spenders).</p>
+</section>
+</section>
+<section id="customer-segment-statistics" class="level1">
+<h1>Customer Segment Statistics</h1>
+<p>The following plot highlights the segments defined above, as well as how many Verano customers fall in each group:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="vrno_customers_in_segments.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>The following table demonstrates the differences between these segments in various summary statistics.</p>
+<table class="table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Segment</th>
+<th style="text-align: left;">Orders Per Day</th>
+<th style="text-align: right;">Average Age</th>
+<th style="text-align: left;">Average Order Total</th>
+<th style="text-align: left;">Average Item Price</th>
+<th style="text-align: right;">Average Orders Per Customer</th>
+<th style="text-align: left;">Total Customers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">All</td>
+<td style="text-align: left;">3,766</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">$98</td>
+<td style="text-align: left;">$45</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">2,104,739</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Prefers Extracts</em></td>
+<td style="text-align: left;"><em>80</em></td>
+<td style="text-align: right;"><em>35</em></td>
+<td style="text-align: left;"><em>$104</em></td>
+<td style="text-align: left;"><em>$51</em></td>
+<td style="text-align: right;"><em>9</em></td>
+<td style="text-align: left;"><em>12,627</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>Prefers Vapes</em></td>
+<td style="text-align: left;"><em>530</em></td>
+<td style="text-align: right;"><em>36</em></td>
+<td style="text-align: left;"><em>$103</em></td>
+<td style="text-align: left;"><em>$52</em></td>
+<td style="text-align: right;"><em>8</em></td>
+<td style="text-align: left;"><em>96,506</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Prefers Tinctures</em></td>
+<td style="text-align: left;"><em>5</em></td>
+<td style="text-align: right;"><em>58</em></td>
+<td style="text-align: left;"><em>$98</em></td>
+<td style="text-align: left;"><em>$49</em></td>
+<td style="text-align: right;"><em>3</em></td>
+<td style="text-align: left;"><em>1,661</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>Prefers Flowers</em></td>
+<td style="text-align: left;"><em>985</em></td>
+<td style="text-align: right;"><em>42</em></td>
+<td style="text-align: left;"><em>$96</em></td>
+<td style="text-align: left;"><em>$52</em></td>
+<td style="text-align: right;"><em>11</em></td>
+<td style="text-align: left;"><em>150,429</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Prefers Tablets</em></td>
+<td style="text-align: left;"><em>11</em></td>
+<td style="text-align: right;"><em>53</em></td>
+<td style="text-align: left;"><em>$96</em></td>
+<td style="text-align: left;"><em>$35</em></td>
+<td style="text-align: right;"><em>3</em></td>
+<td style="text-align: left;"><em>2,675</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>Prefers Topicals</em></td>
+<td style="text-align: left;"><em>5</em></td>
+<td style="text-align: right;"><em>59</em></td>
+<td style="text-align: left;"><em>$94</em></td>
+<td style="text-align: left;"><em>$48</em></td>
+<td style="text-align: right;"><em>2</em></td>
+<td style="text-align: left;"><em>2,459</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Prefers Edibles</em></td>
+<td style="text-align: left;"><em>211</em></td>
+<td style="text-align: right;"><em>48</em></td>
+<td style="text-align: left;"><em>$90</em></td>
+<td style="text-align: left;"><em>$32</em></td>
+<td style="text-align: right;"><em>4</em></td>
+<td style="text-align: left;"><em>72,646</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>Prefers Drinks</em></td>
+<td style="text-align: left;"><em>5</em></td>
+<td style="text-align: right;"><em>45</em></td>
+<td style="text-align: left;"><em>$76</em></td>
+<td style="text-align: left;"><em>$27</em></td>
+<td style="text-align: right;"><em>3</em></td>
+<td style="text-align: left;"><em>1,183</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>Prefers Prerolls</em></td>
+<td style="text-align: left;"><em>171</em></td>
+<td style="text-align: right;"><em>39</em></td>
+<td style="text-align: left;"><em>$52</em></td>
+<td style="text-align: left;"><em>$26</em></td>
+<td style="text-align: right;"><em>7</em></td>
+<td style="text-align: left;"><em>37,997</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Is Discount Senstive</td>
+<td style="text-align: left;">2,373</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">$97</td>
+<td style="text-align: left;">$45</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">235,299</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Orders Most Frequently</td>
+<td style="text-align: left;">1,245</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">$89</td>
+<td style="text-align: left;">$43</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">52,131</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Orders Least Frequently</td>
+<td style="text-align: left;">194</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: left;">$111</td>
+<td style="text-align: left;">$46</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">56,552</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">High Spender</td>
+<td style="text-align: left;">617</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: left;">$195</td>
+<td style="text-align: left;">$54</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: left;">80,701</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Low Spender</td>
+<td style="text-align: left;">922</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: left;">$44</td>
+<td style="text-align: left;">$33</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">74,899</td>
+</tr>
+</tbody>
+</table>
+<section id="segment-comparisons-and-other-insights" class="level2">
+<h2 class="anchored" data-anchor-id="segment-comparisons-and-other-insights">Segment Comparisons and Other Insights</h2>
+<p>Here are some takeaway insights from the summary statistics table above:</p>
+<ul>
+<li><p>The segment with the lowest average age (35) is customers that prefer extracts. The groups with the highest average age is Topicals (59), Tinctures (58), and Tablets (53).</p></li>
+<li><p>Customers that prefer prerolls have a comparitively low average order total ($52), which is only slightly greater than the group of customers that are classified as Low Spenders ($44)</p></li>
+<li><p>Besides the <em>High Spender</em> group, the segments with the highest average order total are those that prefer Extracts ($104) and those that prefer Vapes ($103)</p></li>
+<li><p>Customers that order most frequently have a lower average order total ($89) vs customers that order least frequently ($111)</p></li>
+<li><p>High spenders tend to be older than low spenders (44 vs 38)</p></li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

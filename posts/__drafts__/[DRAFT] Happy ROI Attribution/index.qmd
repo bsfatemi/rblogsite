@@ -1,0 +1,8 @@
+---
+title: "Happy ROI Attribution"
+author: "Bobby Fatemi"
+date: "2023-10-03"
+categories: [insights]
+description: "This post describes how we attribute ROI across our Happy platform, as well as provides new ROI insights"
+draft: true
+---

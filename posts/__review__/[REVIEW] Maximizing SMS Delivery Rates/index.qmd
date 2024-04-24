@@ -1,0 +1,173 @@
+---
+title: "Maximizing SMS Delivery Rates"
+author: "Bobby Fatemi"
+date: "2023-06-28"
+categories: [exploratory, insights]
+description: "This post assesses whether campaign Deliverability Rate can be predicted and if so, can these insights be used to identify best practices to maximize deliverabiliy."
+image: images/sms_plot.jpg
+draft: true
+---
+
+This post assesses whether campaign Deliverability Rate can be predicted
+by first identifying campaign statistics that have a strong correlation
+with higher or lower deliverability. The insights derived from this
+analysis translate initially to 5 best practices that can improve the
+deliverability over time. Additionally, included below are details for
+each and interactive charts that describe every orgs performance on
+these 5 best practices.
+
+# Executive Summary
+
+This work illustrates the potential for successfully predicting the
+deliverability rate of a given campaign, but more concretely, I
+highlight five important factors that have a significantly strong
+correlation with the deliverability rate. [These translate to a set of 5
+best practices that will increase your average deliverability rate over
+time]{.underline}:
+
+> Campaign size is strongly correlated with deliverability; **don't go
+> above 3K total targets** and preferably shoot for between 500 and
+> 1000. See [Campaign Total Targets]
+>
+> Campaigns that include an image have a much higher deliverability on
+> average, thus **always include images with each campaign** (see
+> [Definitely Include an Image])
+>
+> Campaigns that have an Emoji in the message body perform better, thus
+> **use emojis when crafting your message** (see [Use Emojis in the
+> Message])
+>
+> Campaigns that mention actual prices in the message perform worse on
+> average, thus, **don't mention prices, instead describe a discount**
+> (see [Don't Mention Product Prices](#dont-mention-product-prices))
+>
+> Campaigns that use the word "free" in the message perform worse, thus,
+> **avoid use the word "free" altogether** (see [Don't Use the Word
+> "Free"](#dont-use-the-word-free))
+
+# Methodology
+
+For every org with at least 50 campaigns, I calculated a range of
+campaign statistics in order to test whether there was correlation with
+the average deliverability rate and these metrics. Out of all the
+campaign metrics tested, I identified 5 traits associated with a
+campaign that can impact the overall deliverability significantly:
+
+-   How large the campaign is (Total Targets)
+
+-   Whether or not the campaign includes an Image
+
+-   Whether or not the campaign body describes product prices
+
+-   Whether or not the campaign message has the word "Free"
+
+-   Whether or not an Emoji is used in the campaign message
+
+Next, I summarized every org to show the average value of the 5 metrics
+above. Here is a subset of the data showing the first few row:
+
+|                | Ave Target Count | Ave Deliverability | Has Image | Mentions Price | Mentions Free | Includes Emoji |
+|:----------|----------:|:----------|:----------|:----------|:----------|:----------|
+| mankind        |             4028 | 65.6%              | 91.1%     | 17.6%          | 5.7%          | 17.7%          |
+| spark          |              861 | 76.6%              | 4.9%      | 42.3%          | 19.0%         | 0.0%           |
+| beelinebuzz    |              835 | 84.1%              | 48.4%     | 34.4%          | 6.2%          | 21.9%          |
+| lucid          |              982 | 69.3%              | 45.8%     | 55.1%          | 0.4%          | 1.3%           |
+| sava           |             1482 | 82.7%              | 16.4%     | 28.9%          | 2.5%          | 4.2%           |
+| iheartcannabis |              138 | 96.3%              | 13.8%     | 4.3%           | 0.7%          | 1.4%           |
+
+Then I ran a series of linear regressions to attempt to predict
+deliverability rate and found that these 5 stats can predict 50% of the
+variability in average deliverability rates:
+
+> In plain language, this means that I've identified 5 variables that
+> get us half-way to accurately predicting deliverability rate.
+> Furthermore, based on this analysis, there are a number of helpful
+> takeaways to better understanding how to maximize deliverability on
+> any future campaign
+
+# Results
+
+Here are the high-level takeaways regarding the 5 important factors that
+can impact deliverability
+
+------------------------------------------------------------------------
+
+## Campaign Total Targets
+
+The higher the total targets the more likely the deliverability rate
+will be lower. Note for the chart below:
+
+-   Campaigns w/**3K or more targets** have average **deliverability**
+    **between 65% and 75%**
+-   Campaigns w/**1.5K or less targets** have average **deliverability
+    above 80%**
+-   Campaigns w/around **500 targets** have a an average
+    **deliverability rate around 90%**
+
+```{r echo=FALSE, message=FALSE}
+readRDS("widgets/sms_target_size.rds")
+```
+
+------------------------------------------------------------------------
+
+## Definitely Include an Image
+
+On average campaigns that include an image perform dramatically better.
+Note from the chart below:
+
+-   Orgs that **rarely or never** include an image, have average
+    deliverability rates **ranging from 67% to 77%**
+
+-   Orgs that **almost always** include an image have a higher
+    likelihood of reaching **deliverability above 85%**
+
+```{r echo=FALSE, message=FALSE}
+readRDS("widgets/sms_include_image.rds")
+
+```
+
+------------------------------------------------------------------------
+
+## Use Emojis in the Message
+
+Interestingly, campaigns that include emojis on average **perform
+10%-15% better** than campaigns that use only plain text
+
+```{r echo=FALSE, message=FALSE}
+readRDS("widgets/sms_include_emoji.rds")
+
+```
+
+------------------------------------------------------------------------
+
+## Don't Mention Product Prices {#dont-mention-product-prices}
+
+Campaigns that mention prices in the message body are more likely to see
+slightly lower deliverability rates. Instead of mentioning a price,
+mention percentage discounts (which don't show a negative impact on
+deliverability). For example, instead of "\$9.99 for a limited time"
+switch to "30% off for a limited time"
+
+```{r echo=FALSE, message=FALSE}
+readRDS("widgets/sms_include_price.rds")
+```
+
+------------------------------------------------------------------------
+
+## Don't Use the Word "Free" {#dont-use-the-word-free}
+
+There is a correlation with campaigns that use the term "free" in the
+body, and campaigns that have a lower deliverability rate. This could be
+a signal used by sms providers to flag messages. Instead of saying "Buy
+1 get 1 Free", say "Buy 1 and get one on us". Note from the chart below:
+
+-   Orgs that **include the word "Free"** in at least 30% of their
+    campaigns are averaging around **70-80% deliverability**
+
+-   While those that **rarely or never use that term** are seeing around
+    **85-95% deliverability** on average
+
+```{r echo=FALSE, message=FALSE}
+readRDS("widgets/sms_mention_free.rds")
+```
+

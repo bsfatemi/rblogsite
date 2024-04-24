@@ -1,0 +1,35 @@
+
+- category: Blog Apps
+  description: |
+    These are a few of my apps that have associated blog posts and
+    demonstrate the value of transactional data for large-scale retail
+    organizations in cannabis.
+  tiles:
+    - title: House Brands KPIs
+      description: Evaluating the sales performance of a retailer owned house brand across various performance KPIs.
+      href: https://apps.rdata.blog/app/
+      code: https://github.com/r-data-science/rblogapps/tree/main/inst/apps/house_brands_kpis
+      thumbnail: images/gallery-apps-thumb-3.png
+    - title: Stockout Sales Impact
+      description: Estimating the impact from supply chain interuptions on Cannabis retail sales.
+      href: https://apps.rdata.blog/app/
+      code: https://github.com/r-data-science/rblogapps/tree/main/inst/apps/stockout_sales_impact
+      thumbnail: images/gallery-apps-thumb-4.png
+    - title: Event Impact KPIs
+      description: Evaluating the impact across various business success KPIs from the adoption of Happy Cabbage.
+      href: https://apps.rdata.blog/app/
+      code: https://github.com/r-data-science/rblogapps/tree/main/inst/apps/event_impact_kpis
+      thumbnail: images/gallery-apps-thumb-2.png
+    - title: Product Restock Model
+      description: Generate recommendations on whether products in inventory should (or not) be restocked.
+      href: https://apps.rdata.blog/app/
+      code: https://github.com/r-data-science/RestockML
+      thumbnail: images/gallery-apps-thumb-5.png
+    - title: Employee Sales KPIs
+      description: Evaulating retail store employees across various sales-driven performance KPIs.
+      href: https://apps.rdata.blog/app/
+      code: https://github.com/r-data-science/rblogapps/tree/main/inst/apps/employee_sales_kpis
+      thumbnail: images/gallery-apps-thumb-1.png
+
+
+

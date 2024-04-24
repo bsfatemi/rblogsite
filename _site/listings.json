@@ -1,0 +1,23 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/The Actual Learning Curve of a Real Surgeon/index.html",
+      "/posts/Influencing the Learning Curve in Robotic Assisted Surgery/index.html",
+      "/posts/Assessing Performance with Surgical Learning Curves/index.html",
+      "/posts/A Gentle Intro to Surgical Performance/index.html",
+      "/posts/Impact of Product Stockouts/index.html",
+      "/posts/Supply Chain Volatility in Cannabis/index.html",
+      "/posts/Customer LTV in Cannabis/index.html",
+      "/posts/Optimal Price of Kiva Products/index.html",
+      "/posts/Customer Segment Exploration/index.html",
+      "/posts/Discount Demand Modeling/index.html",
+      "/posts/Declining Prices in Cannabis/index.html",
+      "/posts/Consumer Age by Category/index.html"
+    ]
+  },
+  {
+    "listing": "/pages/analytics/index.html",
+    "items": []
+  }
+]

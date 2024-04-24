@@ -1,0 +1,140 @@
+---
+title: "Budtender Category KPIs"
+author: "Bobby Fatemi"
+date: "2023-07-09"
+categories: [insights]
+description: "Can Budtender performance be quantified at the product category-level and if so, can this be used to direct category-specific product training and courses to drive overall store performance."
+image: "images/budtender_category_performance.jpg"
+draft: true
+---
+
+This analysis shows that for a given category, in this case I am
+evaluating `Flower product` performance, and using the performance
+metric `Sales ($) Per Hour`, we can identify budtenders that generate
+the least dollars in flower sales, and estimate the overall sales
+(top-level revenue) impact of targeting Flower training courses towards
+these lower performing budtenders.
+
+More specifically, I demonstrate that:
+
+> *After identifying budtenders that require additional training for
+> Flower products, and then targeting Zoltrain courses towards those
+> budtenders, we can expect top-line sales to increase by 13%. This
+> comes from an increase in flower sales of 30% driven by Zoltrain.
+> Ultimately, the targeted training will translate to Aurora having an
+> estimated \$2,100 more in total sales revenue per day.*
+
+## Ex: Performance of Given Budtender
+
+First let's evaluate `Sales Per Hour` for a randomly chosen budtender
+`Darrell F` at Verano store `Aurora`. With the plot below, I can show
+(and ultimately compare) Darrell's performance in this KPI, across all
+categories, and against all other budtenders at Aurora.
+
+------------------------------------------------------------------------
+
+![](images/budtender_category_performance.jpg)
+
+The following takeaways can be extracted from this plot:
+
+-   [***Darrell underperforms when selling***]{.underline} *Vapes and
+    Flowers. This means Darrell sells less units or cheaper units of
+    Vapes and Flowers than other budtenders at Aurora per hour*
+
+-   [***Darrell falls within the average range***]{.underline} *of
+    budtenders at Aurora for Edibles, Prerolls, Tablets/Capsules, and
+    Tinctures*
+
+-   [***Darrell overperforms when selling***]{.underline} *Extract
+    products compared with other budtenders at Aurora*
+
+-   [***Darrell has not sold any products***]{.underline} *in the Drinks
+    or Tinctures categories. This is considered the most under
+    performing in these groups as Darrell is likely not empowered to
+    sell these items*
+
+------------------------------------------------------------------------
+
+## Ex: Performance of All Budtenders for Flower
+
+Next, let's take a look at the average sales per hour for Flower
+products (vs all other products) for every budtender at Aurora. In the
+plot below, we can see that there are 8 budtenders that fall in the
+highest performance group, and similarly 8 that fall in the lowest
+performance group.
+
+![](images/budtender_sales_per_hour_flowers.jpg)
+
+------------------------------------------------------------------------
+
+# Expected Impact of Zoltrain Training
+
+Next, I want to explore the question:
+
+> What happens if we target the 8 low performing budtenders with
+> Zoltrain courses and training materials specifically for Flower
+> products and brands?
+
+#### First, let's start with a few basic facts:
+
+1.  Top-performers sell an average of \$225 per hour of flower products,
+    while mid-performers sell \$193, and low performers sell \$109 per
+    hour
+
+2.  Zoltrain course impact has been shown to have a [67% positive
+    impact](https://happycabbage.app/blog/posts/Zoltrain%20Course%20Completions/zotrain_rewards_impact.html)
+    on sales for products where budtenders complete training courses
+    towards
+
+3.  The majority of the gains of budtender training come from up-sells
+    and recommendations that increase total ticket size, thus
+    outweighing any product cannibalization effects
+
+4.  If we target 8 low performing budtenders for flower product
+    training, we expect their average of \$109 flower sales per hour to
+    increase
+
+#### Next, let's make the following assumption:
+
+> Since Zoltrain impact analysis shows us an [average impact of 67% from
+> training](https://happycabbage.app/blog/posts/Zoltrain%20Course%20Completions/zotrain_rewards_impact.html),
+> using an assumption that the average sales of flower products for this
+> group will increase 30% from targeted training is a very conservative
+> approach
+
+#### Finally, let's estimate the sales per day impact:
+
+Using the starting facts and the assumption above, I can calculate that
+if low performing budtenders sold 30% more flower dollars, and based on
+the proportion of other products that budtenders sell as well, this
+would result in an increase of 13% in top-line sales dollars. This is
+summarized here:
+
+![](images/zoltrain_impact_analysis_flower.jpg)
+
+**This expected 13% revenue boost from budtender training that comes
+from increases in flower sales dollars of 30% (bringing the low
+performing budtender average of \$109 to \$142 per hour), ultimately
+translates to Aurora having \$2,100 more revenue per day**
+
+------------------------------------------------------------------------
+
+# Appendix
+
+This section includes additional analysis that came from this effort,
+and provides more contextual information about budtenders at Aurora.
+
+### Overall (Total) Velocity
+
+Specifically the plot below describes overall Velocity defined as Units
+Sold Per Day for every budtender at Aurora, as well as the budtender's
+category mix that composes their total units sold per day.
+
+![](images/overall_velocity.jpg)
+
+### Average (Total) Velocity by Group
+
+Here is a summary of the average total units sold per day for each
+Performance Group shown in the plot above:
+
+![](images/ave_velocity_by_group.jpg)

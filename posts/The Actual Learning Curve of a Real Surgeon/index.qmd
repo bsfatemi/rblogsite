@@ -1,0 +1,64 @@
+---
+title: "The Actual Learning Curve of a Real Surgeon"
+author: "Bobby Fatemi"
+description: "This post presents the real observed learning curve for a surgeon over the course of their first year performing Prostatectomy cases."
+categories: [Robotic Surgery]
+image: images/Single Surgeon Learning Curve (Prostatectomy).png
+date-created: "2024-02-20"
+date-modified: ""
+date: "2024-02-20"
+draft: false
+---
+
+## Background
+
+I tracked the surgical procedures of a real-life novice surgeon in their
+first year of performing prostatectomy cases and captured their **total
+procedure duration** for each case. I then fit a log-linear regression
+model to understand whether a learning curve can identified with high
+confidence; Also included is the Surgeon's rate at which they complete
+cases (**average procedures completed per day**) over the same period.
+
+::: {.callout-note appearance="minimal" icon="false"}
+## Summary
+
+Figure 1 below demonstrates a clear learning curve in procedure duration
+for prostatectomy cases over the course of a novice surgeon's first year
+(where they completed around 80 total cases). **As experience increases,
+the efficiency gained from 'learning' results in each case taking an
+average of 25% less time to complete from start to finish, and
+furthermore, this surgeon is able to perform 3X more cases per day on
+average.**
+:::
+
+![Figure 1 - Learning Curve in Procedure Duration for a Novice
+Prostatectomy
+Surgeon](images/Single%20Surgeon%20Learning%20Curve%20(Prostatectomy).png)
+
+<!-- ::: {.callout-important appearance="simple" icon="false"} -->
+
+## Plot Insights
+
+As this surgeon gains experience, they take overall less time to finish
+the surgery, and their observed procedure durations have less
+variability[^1], becoming more and more predictible:
+
+-   [January 2020]{.underline}: Surgeon has limited prostetectomy case
+    experience, and Surgeon's procedures take between **100 amd 160
+    minutes to complete**.
+-   [January 2021]{.underline}: Surgeon has completed around 80 prior
+    cases and Surgeon's procedures take between **83 and 95 minutes to
+    complete**.
+
+Additionally as surgeon progresses through their first year of
+procedures, they are able to complete cases at an increasing rate:
+
+-   [January 2020]{.underline}: Surgeon has limited/no prostetectomy
+    case experience, and surgeon performs cases at an **average rate of
+    1 case every 6 days**
+-   [January 2021]{.underline}: Surgeon has completed around 80 prior
+    cases, and surgeon performs cases at an **average rate of 1 case
+    every 2 days** <!-- ::: -->
+
+[^1]: This is consistent with a surgery like prostetectomy where case
+    complexity remains relatively consistent across patients.

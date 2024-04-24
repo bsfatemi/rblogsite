@@ -1,0 +1,52 @@
+---
+title: "A Brief Overview of Recommendations"
+author: "Bobby Fatemi"
+date: "2023-10-18"
+categories: [insights]
+description: "This post describes a recommendations algorithm that helps retailers determine whether a product currently on the shelf should be restocked from the supplier. Furthermore, I provide a high level overview of the key factors that influence the algorithm and under-the-hood modeling."
+draft: true
+---
+
+Listed below are the factors that impact a sku recommendation, shown in
+order of importance.
+
+*Associated with each are 1 or more levers that when tuned, impact the
+distribution of recommendations assigned to all skus (as an aside, we
+have the ability to expose org/store level tuning if we'd want to in the
+future)*
+
+[Sales Trending]{.underline}
+
+-   If velocity is trending up more recently (90% confidence t-test
+    w/pooled stdev), we will recommend restock
+-   Similarly, a product's velocity trending down with the same
+    confidence will always get a dont restock
+
+[Supply Volatitlity]{.underline}
+
+-   Difference test (90% conf) between predicted and actual revenue
+    while controlling for stockouts
+-   Also considered is the historical out of stock rate
+
+[Time Since First Sale]{.underline}
+
+-   If a product is brand new, we will recommend restock because we
+    essentially need more data ("New Menu Item")
+-   Alternatively, regular sales (low out of stock rate) with
+    transactions dating back at least 6 months ("Menu Classic")
+
+[Price Point Benchmark]{.underline}
+
+-   Classifying as high, low, or mid price point based on the 20% and
+    80% quantile of all products of the same category
+
+[Purchase behavior attributes]{.underline}
+
+-   Primary Products are given priority in the model
+    -   A primary product drives over half an orders total dollars when
+        purchased
+-   Secondary Products are de-prioritized within the model
+    -   \[NEW\] The definition of a secondary product has gotten more
+        strict
+    -   A product is secondary if on average it drives less than 25% of
+        an order's total dollars when purchased

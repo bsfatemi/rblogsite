@@ -1,0 +1,84 @@
+---
+title: "Verano Budtender KPIs"
+author: "Bobby Fatemi"
+date: "2023-06-29"
+categories: [insights]
+image: images/verano_kpi_screenshot.jpg
+description: "This post describes the results from an effort to evaluate all Verano stores for feasibility of calculating a series of budtender performance KPIs. These metrics are intended to highlight budtender effectiveness in selling Verano brand products."
+draft: true
+---
+
+> This work shows us that for 36 of Verano's 39 retail location, these
+> KPIs can be measured and used to rank Budtender performance within
+> each store
+
+# Metric Definitions
+
+The following KPIs were calculated for all budtenders across 36 of 39
+Verano retail locations. These are the table columns corresponding to
+each metric, as well as their definitions
+
+`total_sales`
+
+:   *Total dollar sales in period for a given budtender*
+
+`order_days`
+
+:   *Number of days within the period that the budtender has completed
+    orders*
+
+`orders_per_day`
+
+:   *The average orders sold per day for a budtender within the given
+    period. This is calculated by dividing a budtenders total orders
+    within the period by `order_days`*
+
+`dollars_per_day`
+
+:   *The average dollar sales per day for a budtender within the given
+    period. This is calculated as `total_sales` / `order_days`*
+
+`ave_order_size_no_house`
+
+:   *The average ticket size for a budtender when their orders do NOT
+    include a Verano brand house product*
+
+`ave_order_size_house`
+
+:   *The average ticket size for a budtender when their orders DO
+    include a Verano brand house product*
+
+**`ave_house_dollars_per_order`**
+
+:   *The average dollar amount spent per order on Verano brand house
+    products, when the budtender sells Verano in the order. This is
+    strictly less than or equal to `ave_order_size_house` as it is the
+    portion of `ave_order_size_house` that is actually spent on Verano
+    items*
+
+**`house_order_premium`**
+
+:   *This describes how much greater a budtender's average ticket size
+    is when selling an order that contains a house product (vs orders
+    that do not). This is calculated as (`ave_order_size_house` -
+    `ave_order_size_no_house`) / `ave_order_size_no_house`*
+
+`pct_orders_house`
+
+:   *The percentage of a budtenders total orders within a given period
+    that contain at least one Verano house product*
+
+`pct_dollars_house`
+
+:   *The percentage of a budtenders `total_sales` in the period that
+    came from selling Verano house products*
+
+# Exploring the Data
+
+The following app demonstrates budtender performance across each of the
+KPIs described above
+
+```{=html}
+<iframe width="950" height="1200" src="https://happycabbage.app/content/667df7ab-46bf-46d0-a66d-df4edbafbeed/" 
+title="Quarto Documentation"></iframe>
+```
